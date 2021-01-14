@@ -111,8 +111,8 @@ $('.project-post .entry-container').matchHeight();
 //     asNavFor: '#product-main-view'
 // });
 
-// PRODUCT ZOOM
-$('#product-main-view .product-view').zoom();
+// // PRODUCT ZOOM
+// $('#product-main-view .product-view').zoom();
 
 
 // Quantity add / minus

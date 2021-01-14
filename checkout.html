@@ -47,8 +47,9 @@
                 </ul>
                 <ul class="language-translator">
                     <li><a href="#"><img src="images/icons/nepal.png" alt="nepal"></a></li>
+                    <li><a href="#"><img src="images/icons/malaysia.png" alt="malaysia"></a></li>
                     <li><a href="#"><img src="images/icons/japan.png" alt="japan"></a></li>
-                    <li><a href="#"><img src="images/icons/koria.png" alt="koria"></a></li>
+                    <li><a href="#"><img src="images/icons/usa.png" alt="usa"></a></li>
                 </ul>
             </div>
         </div><!-- container-fluid end -->
@@ -276,8 +277,8 @@
         <div class="ws-breadcrumb">
             <ul>
                 <li><a href="#"><i class="fa fa-home"></i> </a> </li>
-                <li><a href="#">Account</a></li>
-                <li class="active">Register</li>
+                <li><a href="#">Products</a></li>
+                <li class="active">Checkout</li>
             </ul>
         </div>
 
@@ -287,134 +288,462 @@
 <main class="section-all">
     <div class="container">
         <div class="heading-all inner-heading mb-20">
-            <h1>Account Register</h1>
+            <h1>Checkout</h1>
         </div>
 
-        <form method="post" action="#">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-6">
-                    <div class="common-box">
-                        <div class="heading align-items-center">
-                            <div class="heading-icon">
-                                <i class="fas fa-user"></i>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-8">
+                <div class="common-box">
+                    <div class="heading align-items-center">
+                        <div class="heading-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="heading-text">
+                            <h2>Login</h2>
+                        </div>
+                    </div>
+                    <div class="form-wrap">
+
+                        <div class="row">
+                            <div class="form-group col-12 col-md-6">
+                                <label for="logEmail">Email</label>
+                                <input type="email" name="logEmail" class="form-control" placeholder="Your Email">
                             </div>
-                            <div class="heading-text">
-                                <h2>Personal Detail</h2>
+                            <div class="form-group col-12 col-md-6">
+                                <label for="logPassword">Password</label>
+                                <input type="password" name="logPassword" class="form-control" placeholder="Your Password">
+                                <a href="#" class="small">Forgot Password?</a>
+                            </div>
+
+                            <div class="mb-10 col-12">
+                                <button type="submit" class="btn btn-all">Login</button>
                             </div>
                         </div>
-                        <div class="form-wrap">
-                            <div class="row">
-                                <div class="col-12 form-group">
-                                    <label for="regFname">First Name</label>
-                                    <input type="text" name="regFname" class="form-control" placeholder="First Name">
-                                </div>
-                                <div class="col-12 form-group">
-                                    <label for="regLname">Last Name</label>
-                                    <input type="text" name="regLname" class="form-control" placeholder="Lirst Name">
-                                </div>
-                                <div class="col-12 form-group">
-                                    <label for="regEmail">Last Name</label>
-                                    <input type="email" name="regEmail" class="form-control" placeholder="Email">
-                                </div>
-                                <div class="col-12 form-group">
-                                    <label for="regTel">Last Name</label>
-                                    <input type="tel" name="regTel" class="form-control" placeholder="Telephone">
-                                </div>
+
+
+
+                    </div>
+
+                </div>
+
+                <div class="common-box">
+                    <div class="heading align-items-center">
+                        <div class="heading-icon">
+                            <i class="fas fa-map-marked"></i>
+                        </div>
+                        <div class="heading-text">
+                            <h2>Account Register and Billing Detail</h2>
+                        </div>
+                    </div>
+                    <div class="form-wrap">
+                        <div class="row">
+                            <div class="col-12 col-md-6 form-group">
+                                <label for="regFname">First Name</label>
+                                <input type="text" name="regFname" class="form-control" placeholder="First Name">
+                            </div>
+                            <div class="col-12 col-md-6 form-group">
+                                <label for="regLname">Last Name</label>
+                                <input type="text" name="regLname" class="form-control" placeholder="Lirst Name">
+                            </div>
+                            <div class="col-12 col-md-6 form-group">
+                                <label for="regEmail">Email</label>
+                                <input type="email" name="regEmail" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="col-12 col-md-6 form-group">
+                                <label for="regTel">Telephone</label>
+                                <input type="tel" name="regTel" class="form-control" placeholder="Telephone">
+                            </div>
+                            <div class="col-12 col-md-6 form-group">
+                                <label for="regAddress">Address</label>
+                                <input type="text" name="regAddress" class="form-control" placeholder="Address">
+                            </div>
+                            <div class="col-12 col-md-6 form-group">
+                                <label for="regCIty">City</label>
+                                <input type="text" name="regAddress" class="form-control" placeholder="City">
+                            </div>
+
+                            <div class="col-12 col-md-4 form-group">
+                                <label for="regCountry">Country</label>
+                                <select class="form-control">
+                                    <option selected>Select Country...</option>
+                                    <option>Nepal</option>
+                                    <option>China</option>
+                                    <option>Bangladesh</option>
+                                    <option>UK</option>
+                                    <option>USA</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-4 form-group">
+                                <label for="regState">State</label>
+                                <select class="form-control">
+                                    <option selected>Select State...</option>
+                                    <option>Bagmati</option>
+                                    <option>Bheri</option>
+                                    <option>Karnali</option>
+                                    <option>Rapti</option>
+                                    <option>Sagarmatha</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-4 form-group">
+                                <label for="regDistrict">District</label>
+                                <select class="form-control">
+                                    <option selected>Select District...</option>
+                                    <option>Kathmandu</option>
+                                    <option>Bhaktapur</option>
+                                    <option>Lalitpur</option>
+                                </select>
+                            </div>
+                            <hr class="w-100">
+                            <div class="col-12">
+                                <label for="createAccount" id="accountAddCheckout">
+                                    <input type="checkbox" id="createAccount">&nbsp;&nbsp;
+                                    <span>Also Create account for future use</span>
+                                </label>
+                            </div>
+                            <div id="passwordAdding" class="col-12 mt-20 mb-20">
+                                <h3>Set Your Password</h3>
+                                    <div class="row m-0-15">
+                                        <div class="form-group col-12 col-sm-12 col-md-6">
+                                            <label for="regPassword">Password</label>
+                                            <input type="Password" name="regPassword" class="form-control" placeholder="******">
+                                        </div>
+                                        <div class="form-group col-12 col-sm-12 col-md-6">
+                                            <label for="regRepassword">Retype Password</label>
+                                            <input type="Password" name="regRepassword" class="form-control" placeholder="******">
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="col-12 ">
+                                <label for="deliveryDetail">
+                                    <input type="checkbox" id="deliveryDetail">&nbsp;&nbsp;
+                                    <span>My delivery and billing addresses are the same.</span>
+                                </label>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-12 col-md-6">
-                    <div class="common-box">
-                        <div class="heading align-items-center">
-                            <div class="heading-icon">
-                                <i class="fas fa-map-marked"></i>
-                            </div>
-                            <div class="heading-text">
-                                <h2>Your Address</h2>
-                            </div>
+                <div class="common-box">
+                    <div class="heading align-items-center">
+                        <div class="heading-icon">
+                            <i class="fas fa-map-marker"></i>
                         </div>
-                        <div class="form-wrap">
-                            <div class="row">
-                                <div class="col-12 form-group">
-                                    <label for="regAddress">Address</label>
-                                    <input type="text" name="regAddress" class="form-control" placeholder="Address">
-                                </div>
-                                <div class="col-12 form-group">
-                                    <label for="regZipcode">Zip Code</label>
-                                    <input type="text" name="regZipcode" class="form-control" placeholder="Zip Code">
-                                </div>
-                                <div class="col-12 form-group">
-                                    <label for="regCountry">Country</label>
-                                    <select class="form-control">
-                                        <option selected>Select Country...</option>
-                                        <option>Nepal</option>
-                                        <option>China</option>
-                                        <option>Bangladesh</option>
-                                        <option>UK</option>
-                                        <option>USA</option>
-                                    </select>
-                                </div>
-                                <div class="col-12 form-group">
-                                    <label for="regState">State</label>
-                                    <select class="form-control">
-                                        <option selected>Select State...</option>
-                                        <option>Bagmati</option>
-                                        <option>Bheri</option>
-                                        <option>Karnali</option>
-                                        <option>Rapti</option>
-                                        <option>Sagarmatha</option>
-                                    </select>
-                                </div>
-                                <div class="col-12 form-group">
-                                    <label for="regDistrict">District</label>
-                                    <select class="form-control">
-                                        <option selected>Select Country...</option>
-                                        <option>Kathmandu</option>
-                                        <option>Bhaktapur</option>
-                                        <option>Lalitpur</option>
-                                    </select>
-                                </div>
+                        <div class="heading-text">
+                            <h2>Delivery Detail</h2>
+                        </div>
+                    </div>
+                    <div class="form-wrap">
+                        <div class="row">
+                            <div class="col-12 col-md-6 form-group">
+                                <label for="regFname">First Name</label>
+                                <input type="text" name="regFname" class="form-control" placeholder="First Name">
+                            </div>
+                            <div class="col-12 col-md-6 form-group">
+                                <label for="regLname">Last Name</label>
+                                <input type="text" name="regLname" class="form-control" placeholder="Lirst Name">
+                            </div>
+                            <div class="col-12 col-md-6 form-group">
+                                <label for="regEmail">Email</label>
+                                <input type="email" name="regEmail" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="col-12 col-md-6 form-group">
+                                <label for="regTel">Telephone</label>
+                                <input type="tel" name="regTel" class="form-control" placeholder="Telephone">
+                            </div>
+                            <div class="col-12 col-md-6 form-group">
+                                <label for="regAddress">Address</label>
+                                <input type="text" name="regAddress" class="form-control" placeholder="Address">
+                            </div>
+                            <div class="col-12 col-md-6 form-group">
+                                <label for="regCIty">City</label>
+                                <input type="text" name="regAddress" class="form-control" placeholder="City">
+                            </div>
 
+                            <div class="col-12 col-md-4 form-group">
+                                <label for="regCountry">Country</label>
+                                <select class="form-control">
+                                    <option selected>Select Country...</option>
+                                    <option>Nepal</option>
+                                    <option>China</option>
+                                    <option>Bangladesh</option>
+                                    <option>UK</option>
+                                    <option>USA</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-4 form-group">
+                                <label for="regState">State</label>
+                                <select class="form-control">
+                                    <option selected>Select State...</option>
+                                    <option>Bagmati</option>
+                                    <option>Bheri</option>
+                                    <option>Karnali</option>
+                                    <option>Rapti</option>
+                                    <option>Sagarmatha</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-4 form-group">
+                                <label for="regDistrict">District</label>
+                                <select class="form-control">
+                                    <option selected>Select District...</option>
+                                    <option>Kathmandu</option>
+                                    <option>Bhaktapur</option>
+                                    <option>Lalitpur</option>
+                                </select>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-12 col-md-12">
-                    <div class="common-box">
-                        <div class="heading align-items-center">
-                            <div class="heading-icon">
-                                <i class="fas fa-key"></i>
-                            </div>
-                            <div class="heading-text text-center">
-                                <h2>Your Password</h2>
-                            </div>
+                <div class="common-box">
+                    <div class="heading align-items-center">
+                        <div class="heading-icon">
+                            <i class="fas fa-shopping-cart"></i>
                         </div>
-                        <div class="form-wrap">
-                            <div class="row">
-                            <div class="form-group col-12 col-sm-12 col-md-6">
-                                <label for="regPassword">Password</label>
-                                <input type="Password" name="regPassword" class="form-control" placeholder="******">
-                            </div>
-                            <div class="form-group col-12 col-sm-12 col-md-6">
-                                <label for="regRepassword">Retype Password</label>
-                                <input type="Password" name="regRepassword" class="form-control" placeholder="******">
-                            </div>
+                        <div class="heading-text">
+                            <h2>Shopping Cart Items</h2>
+                        </div>
+                    </div>
+                    <div class="form-wrap">
+                        <div class="row">
+                            <div class="cart-table v-align-table table-responsive col-12" data-pattern="priority-columns">
+                            <table cellspacing="0" class="table table-small-font table-bordered table-striped">
+                                <thead>
+                                <tr>
+                                    <th class="text-center">Image</th>
+                                    <th>Product Name</th>
+                                    <th>Unit Price</th>
+                                    <th class="text-center">Quantity</th>
+                                    <th>Total</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="text-center wd-100 align-middle"><a href="./"><img src="images/5.jpg" width="50px" alt="1" /></a></td>
+                                    <td class="align-middle"><a href="./" class="active-link">Cutton Women Cloth</a></td>
+                                    <td class="wd-100 align-middle">USD 100</td>
+                                    <td class="wd-200 align-middle">
+                                        <div>
+                                            <div class="quantity-wrap">
+                                                <button type="button" id="sub" class="sub">-</button>
+                                                <input class="count" type="text" id="1" value="1" min="1" max="100"/>
+                                                <button type="button" id="add" class="add">+</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="align-middle">USD 100</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center wd-100 align-middle"><a href="./"><img src="images/6.jpg" width="50px" alt="1" /></a></td>
+                                    <td class="align-middle"><a href="./" class="active-link">Cutton Women Cloth</a></td>
+                                    <td class="wd-100 align-middle">USD 100</td>
+                                    <td class="wd-200 align-middle">
+                                        <div>
+                                            <div class="quantity-wrap">
+                                                <button type="button" id="sub" class="sub">-</button>
+                                                <input class="count" type="text" id="1" value="1" min="1" max="100"/>
+                                                <button type="button" id="add" class="add">+</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="align-middle">USD 100</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                            <!--table-responsive closed-->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-4">
+                <div class="common-box">
+                    <div class="heading align-items-center">
+                        <div class="heading-icon">
+                            <i class="fas fa-list-alt"></i>
+                        </div>
+                        <div class="heading-text">
+                            <h2>Order Summery</h2>
+                        </div>
+                    </div>
+                    <div class="form-wrap">
+                        <div class="row">
+                            <div class="col-12 mt-10">
+                                <table cellspacing="0" class="table table-small-font table-bordered table-striped">
+                                    <tr class="total sub">
+                                        <th>
+                                            <span>Cart Sub total</span>
+                                        </th>
+                                        <td>रू. 14,758.00</td>
+                                    </tr>
+                                    <tr class="shipping">
+                                        <th>
+                                            <span>Shipping</span>
+                                            <a href="#" class="small">Delivery chart</a>
+                                        </th>
+                                        <td>रू. 0.00</td>
+                                    </tr>
+                                    <tr class="total grand">
+                                        <th>
+                                            <strong>Order Total</strong>
+                                        </th>
+                                        <td><strong>रू. 14,758.00</strong></td>
+                                    </tr>
+                                </table>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12">
-                    <div class="d-flex justify-content-between">
-                        <a href="#" class="btn btn-all mt-10">Back</a>
-                        <a href="#" class="btn btn-all mt-10">Register</a>
+                <div class="common-box">
+                    <div class="heading align-items-center">
+                        <div class="heading-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <div class="heading-text">
+                            <h2>Delivery Method</h2>
+                        </div>
                     </div>
+                    <div class="form-wrap">
+                        <div class="row">
+                            <div class="col-12 mt-10">
+                                <p>Please select the preferred shipping method to use on this order.</p>
+
+                                <table cellspacing="0" class="table table-small align-items-center">
+                                <tr>
+                                    <td class="wd-50 align-middle">
+                                        <input type="radio" id="dboxDelivery" name="deliveryType">
+                                    </td>
+                                    <td class="align-middle">
+                                        <label for="dboxDelivery">Use Discount Box Delivery</label>
+                                    </td>
+                                    <td class="align-middle">
+                                        <label for="dboxDelivery">रू.0.00</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wd-50 align-middle">
+                                        <input type="radio" id="storePickup" name="deliveryType">
+                                    </td>
+                                    <td class="align-middle">
+                                        <label for="storePickup">Pickup from store</label>
+                                    </td>
+                                    <td class="align-middle">
+                                        <label for="storePickup">रू.0.00</label>
+                                    </td>
+                                </tr>
+
+                            </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="common-box">
+                    <div class="heading align-items-center">
+                        <div class="heading-icon">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <div class="heading-text">
+                            <h2>Payment Method</h2>
+                        </div>
+                    </div>
+                    <div class="form-wrap">
+                        <div class="row">
+                            <div class="col-12 mt-10">
+                                <p>Please select the preferred method to compete your order.</p>
+
+                                <table cellspacing="0" class="table table-small align-items-center">
+                                    <tr>
+                                        <td class="wd-50 align-middle">
+                                            <input type="radio" id="cashonDelivery" name="paymentyType">
+                                        </td>
+                                        <td class="align-middle" colspan="2">
+                                            <label for="cashonDelivery">Cash on Delivery</label>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="wd-50 align-middle">
+                                            <input type="radio" id="esewaPay" name="paymentyType">
+                                        </td>
+                                        <td class="align-middle">
+                                            <label for="esewaPay">Esewa</label>
+                                        </td>
+                                        <td class="align-middle">
+                                            <label for="esewaPay"><img src="images/icons/esewa.png" alt="esewa"> </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="wd-50 align-middle">
+                                            <input type="radio" id="paypalPay" name="paymentyType">
+                                        </td>
+                                        <td class="align-middle">
+                                            <label for="paypalPay">Paypal</label>
+                                        </td>
+                                        <td class="align-middle">
+                                            <label for="paypalPay"><img src="images/icons/paypal.png" alt="paypal"> </label>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="common-box">
+                    <div class="heading align-items-center">
+                        <div class="heading-icon">
+                            <i class="fas fa-arrow-alt-circle-down"></i>
+                        </div>
+                        <div class="heading-text">
+                            <h2>Aditional Information</h2>
+                        </div>
+                    </div>
+                    <div class="form-wrap">
+                        <div class="row">
+                           <div class="col-12 form-group">
+                               <label for="orderComment">Add Order comment</label>
+                               <textarea id="orderComment" class="form-control" placeholder="add comment here.."></textarea>
+                           </div>
+                            <div class="col-12 form-group">
+                                <label for="couponCodeEntry">Enter your coupon code</label>
+                                <form method="post" action="#">
+                                    <div class="form-group">
+                                        <label class="input-group">
+                                            <input type="text" id="couponCodeEntry" class="form-control" placeholder="Enter your coupon code here..">
+                                            <button type="submit" class="btn btn-all">Apply Coupon</button>
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-12 form-group">
+                                <label for="giftvoucherCodeEntry">Use Gift voucher code</label>
+                                <form method="post" action="#">
+                                    <div class="form-group">
+                                        <label class="input-group">
+                                            <input type="text" id="giftvoucherCodeEntry" class="form-control" placeholder="Enter your gift voucher here..">
+                                            <button type="submit" class="btn btn-all">Use Gift Voucher</button>
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-12">
+                <div class="d-flex justify-content-between">
+                    <a href="#" class="btn btn-all mt-10">Continue Shopping</a>
+                    <a href="#" class="btn btn-all mt-10">Proceed Checkout</a>
                 </div>
             </div>
-        </form>
+        </div>
+
     </div>
 </main>
 

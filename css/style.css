@@ -94,13 +94,12 @@ button {
 input.form-control,
 textarea.form-control,
 select.form-control {
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
     outline: none;
 
 }
-
 input.form-control:focus,
 textarea.form-control:focus,
 select.form-control:focus,
@@ -113,13 +112,25 @@ button:focus {
 }
 
 textarea.form-control {
-    height: 250px;
+    height: 150px;
 }
-
+input[type="checkbox"],
+input[type="radio"] {
+    width: 18px; /*Desired width*/
+    height: 18px; /*Desired height*/
+    cursor: pointer;
+}
+.small {
+    font-size: 85%;
+    display: block;
+    margin: 5px 0 10px 0;
+}
 .btn {
     background-color: #ffffff;
 }
-
+.btn-round {
+    border-radius: 50%;
+}
 .form-wrap {
     margin-bottom: 20px;
 }
@@ -159,8 +170,32 @@ textarea.form-control {
 img {
     max-width: 100%;
 }
+.radius-10 {
+    border-radius: 10px;
+}
 .row {
     margin: 0 -30px;
+}
+.wd-50 {
+    width: 50px;
+}
+.wd-100 {
+    width: 100px;
+}
+.wd-200 {
+    width: 200px;
+}
+.wd-300 {
+    width: 300px;
+}
+.wd-400 {
+    width: 400px;
+}
+.wd-500 {
+    width: 500px;
+}
+.m-0-15 {
+    margin: 0 -15px;
 }
 .m-0 {
     margin: 0;
@@ -226,7 +261,7 @@ img {
     background-color: #d02122;
     border-radius: 5px;
     color: #ffffff;
-    padding: 8px 15px;
+    padding: 7px 15px;
     min-width: 110px;
     display: inline-block;
     -webkit-transition: all ease-in-out 0.3s;
@@ -307,7 +342,6 @@ img {
 }
 .heading-all .more-link {
     font-size: 1rem;
-    color: #999999;
 }
 .heading-all .more-link:hover {
     color: #d02122;
@@ -455,7 +489,7 @@ img {
 
 .header-top {
     background-color: #f7f7f7;
-    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
     /*border-bottom: 1px solid #cccccc;*/
     font-size: 1rem;
 }
@@ -694,6 +728,9 @@ img {
 .sub-category-col {
     border-right: 1px solid #eeeeee;
     padding: 10px 15px;
+}
+.sub-category-col:last-child {
+    border-right: 0;
 }
 .sub-category-items {
     padding: 10px 0 0 0;
@@ -2061,7 +2098,7 @@ img {
 
 .quantity-wrap button {
     width: 45px;
-    height: 45px;
+    height: 35px;
     border: 1px solid #cccccc;
     background-color: #f2f2f2;
     color: #1b1e21;
@@ -2092,4 +2129,59 @@ img {
 }
 .review-box {
     max-width: 800px;
+}
+.accordion .card .card-header .btn-header-link:after {
+    content: "\f107";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    float: right;
+}
+
+.accordion .card .card-header .btn-header-link.collapsed {
+}
+.accordion .card .card-header {
+    background-color: transparent;
+    padding: 0;
+}
+.accordion .card .card-header .btn-header-link {
+    width: 100%;
+    outline: none;
+    font-size: 1.25rem;
+    text-align: left;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.accordion .card .card-header .btn-header-link:focus {
+    outline: none;
+    box-shadow: none;
+}
+.accordion .card .card-header .btn-header-link.collapsed:after {
+    content: "\f106";
+}
+
+.accordion .card .collapse .card-body {
+    border-top: 1px solid #dddddd;
+}
+
+.accordion .card .collapse.show {
+    background: #ffffff;
+}
+.accordion .card .collapse.collapsing {
+    background-color: transparent;
+}
+
+.single-product-btns .button-action {
+    font-size: 24px;
+    padding: 7px 15px;
+}
+.single-product-btns .button-action span {
+    font-size: 20px;
+    margin-left: 5px;
+}
+.single-product-btns .feather {
+    width: 30px;
+    height: 30px;
+}
+.post-detail ul {
+    margin-bottom: 20px;
 }
