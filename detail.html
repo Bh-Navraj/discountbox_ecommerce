@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.jqZoom.css">
     <link rel="stylesheet" href="css/style.css">
+
 
     <title>DiscountBox: True global online store</title>
 </head>
@@ -290,20 +293,24 @@
 <main class="section-all">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-sm-6 col-md-5 col-lg-5">
+            <div class="col-12 col-sm-12 col-md-7 col-lg-5 mb-30">
                 <div id="product-main-view">
-                    <div class="product-view">
-                        <img src="images/detail/titan1.jpg" alt="img7">
+                    <div class="product-view zoom-box">
+                        <img id="img1" src="images/detail/titan1.jpg" alt="img7">
                     </div>
-                    <div class="product-view">
+                    <div class="product-view zoom-box">
                         <img src="images/detail/titan2.jpg" alt="img7">
                     </div>
-                    <div class="product-view">
+                    <div class="product-view zoom-box">
                         <img src="images/detail/titan3.jpg" alt="img7">
                     </div>
-                    <div class="product-view">
+                    <div class="product-view zoom-box">
                         <img src="images/detail/titan4.jpg" alt="img7">
                     </div>
+                    <div class="product-view zoom-box">
+                        <img src="images/detail/titan2.jpg" alt="img7">
+                    </div>
+
                 </div>
                 <div id="product-view">
                     <div class="product-view">
@@ -318,14 +325,20 @@
                     <div class="product-view">
                         <img src="images/detail/titan4.jpg" alt="img7">
                     </div>
+                    <div class="product-view">
+                        <img src="images/detail/titan4.jpg" alt="img7">
+                    </div>
+
                 </div>
             </div>
-            <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+            <div class="col-12 col-sm-12 col-md-5 col-lg-4 mb-30">
                 <div class="product-detail-wrap">
+                    <h1>Titan Brown Dial Silver Stainless Steel Strap Watch 90105KM01</h1>
                     <p class="sku">WM538.SM</p>
 
-                    <div class="product-price">
-                        <span class="price-new">Rs. 44.00</span>
+                    <div class="product-price mb-10">
+                        <span class="price-new">रु. 44.00</span>
+                        <span class="price-old">रु 59</span>
                     </div>
 
                     <div class="rating">
@@ -341,8 +354,12 @@
                         </a>
                     </div>
                     <div class="mb-20 mt-20">
-                        <span class="stocktag instock pull-left">In Stock</span>
+                        <span class="stocktag instock pull-left"><i class="far fa-check-circle"></i>In Stock</span>
                         <span class="remain-item">20 Items Left</span>
+                    </div>
+                    <div class="mb-20 mt-20">
+                        <span class="stocktag out-stock pull-left"><i class="far fa-times-circle"></i>Out of Stock</span>
+                        <span class="remain-item">No Items Left</span>
                     </div>
                     <div class="mb-20">
                         <div class="quantity-wrap">
@@ -351,7 +368,83 @@
                             <button type="button" id="add" class="add">+</button>
                         </div>
                     </div>
-                    <div class="product-buttons-wrap single-product-btns mb-20">
+                    <div class="mb-10">
+                        <div class="product-color">
+                            <p class="mb-10"><strong>Choose Color:</strong></p>
+                            <ul>
+                                <li>
+                                    <input id="redColor" class="red" type="radio" checked="true" name="colorSelection">
+                                    <label for="redColor">
+                                        <span></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input id="blueColor" class="blue" type="radio" name="colorSelection">
+                                    <label for="blueColor">
+                                        <span></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input id="greenColor" class="green" type="radio" name="colorSelection">
+                                    <label for="greenColor">
+                                        <span></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input id="yellowColor" class="yellow" type="radio" name="colorSelection">
+                                    <label for="yellowColor">
+                                        <span></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input id="silverColor" class="silver" type="radio" name="colorSelection">
+                                    <label for="silverColor">
+                                        <span></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input id="blackColor" class="black" type="radio" name="colorSelection">
+                                    <label for="blackColor">
+                                        <span></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="mb-10">
+                        <div class="product-size">
+                            <p class="mb-10"><strong>Choose Size:</strong></p>
+                            <ul>
+                                <li>
+                                    <input id="smallSize" type="radio" checked="true" name="sizeSelection">
+                                    <label for="smallSize">
+                                        <span>SMALL</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input id="xlSize" type="radio" checked="true" name="sizeSelection">
+                                    <label for="xlSize">
+                                        <span>XL</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input id="xxlSize" type="radio" checked="true" name="sizeSelection">
+                                    <label for="xxlSize">
+                                        <span>XXL</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input id="lgSize" type="radio" checked="true" name="sizeSelection">
+                                    <label for="lgSize">
+                                        <span>LARGE</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="product-buttons-wrap single-product-btns mb-10">
                         <button class="button-action btn-sm d-inline-flex">
                             <i data-feather="shopping-cart"></i>
                             <span>Add to Cart</span>
@@ -363,29 +456,42 @@
                             <i data-feather="repeat"></i>
                         </button>
                     </div>
-
-                    <div class="mb-20 post-detail">
-                        <div class="heading">
-                            <h4>Short Information</h4>
-                        </div>
-                        <p>Labradorite is a stone of the Throat Chakra, believed to open the wearer up to their natural
-                            intuition and creativity. Its beauty and layered color comes from the thousands of years of
-                            mineral plates sliding together, piling on top of each other to create the many lines and
-                            veins of colors deep into the stone.
-
-                            Sized ring - please choose your size. Front of ring measures just over 0.5 inch tall. *As
-                            each ring is handmade, size or style of stone may vary slightly.*
-                        </p>
-
+                    <div class="product-buttons-wrap single-product-btns mb-10 ">
+                        <button class="btn btn-all btn-lg wd-200">
+                            Buy Now
+                        </button>
                     </div>
+
                 </div>
 
             </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                <div class="background-white detail-vendor-box p-3 mb-30">
+                    <h3>Sold By</h3>
+                    <hr/>
 
-            <div class="col-12 post-detail mt-50 mb-40">
-                <div class="heading-all">
-                    <h2>Detail Information</h2>
+                    <div class="vendor-info clearfix">
+                        <div class="vendor-brand">
+                            <img src="images/vendors/titan.jpg" alt="titan">
+                        </div>
+                        <h4>Titan Watch Pvt Ltd</h4>
+                        <a href="#" class="btn-all btn-sm">View Store</a>
+                        <p>120 Products</p>
+                    </div>
+
                 </div>
+            </div>
+
+        </div><!-- row end -->
+
+        <div class="row m-0-15">
+            <div class="col-12 background-white radius-10 p-3">
+            <div class="post-detail">
+                <div class="heading-all">
+                    <h1>Detail Information</h1>
+                    <hr />
+                </div>
+
                 <p>Labradorite is a stone of the Throat Chakra, believed to open the wearer up to their natural
                     intuition and creativity. Its beauty and layered color comes from the thousands of years of mineral
                     plates sliding together, piling on top of each other to create the many lines and veins of colors
@@ -410,42 +516,515 @@
                 </ul>
 
 
-                <div class="heading mb-20 mt-20">
-                    <h3>Write Review</h3>
+                <div class="heading-all mb-20 mt-20">
+                    <h1>Customer Reviews</h1>
+                    <hr/>
                 </div>
 
-                <div class="common-box review-box">
-                    <form method="post" action="#">
-                        <div class="form-wrap">
-                            <div class="form-group">
-                                <label for="regFname">Full Name</label>
-                                <input type="text" name="revFname" class="form-control" placeholder="Full Name">
+                <div class="row m-0-15 review-box">
+                    <div class="col-12 col-sm-12 col-md-6">
+                        <div class="reviews-wrap">
+                            <div class="review-item">
+                                <blockquote>
+                                    Great price and radsrecommended by my plumber, one was damaged,
+                                    no problem - next day pick up and drop off replacement.
+                                </blockquote>
+                                <div class="rating">
+                                    <div class="review-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                                <h4 class="reviewer"><i class="fa fa-user"></i> Ram Bahadur </h4>
                             </div>
 
-                            <div class="form-group">
-                                <label for="revEmail">Email</label>
-                                <input type="email" name="revEmail" class="form-control" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <label for="revTel">Contact</label>
-                                <input type="tel" name="revTel" class="form-control" placeholder="Telephone">
+                            <div class="review-item">
+                                <blockquote>
+                                    Great price and radsrecommended by my plumber, one was damaged,
+                                    no problem - next day pick up and drop off replacement.
+                                </blockquote>
+                                <div class="rating">
+                                    <div class="review-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                                <h4 class="reviewer"><i class="fa fa-user"></i> Ram Bahadur </h4>
                             </div>
 
-                            <div class="form-group">
-                                <label for="revTel">Review Note</label>
-                                <textarea class="form-control">
-
-                                </textarea>
+                            <div class="review-item">
+                                <blockquote>
+                                    Great price and radsrecommended by my plumber, one was damaged,
+                                    no problem - next day pick up and drop off replacement.
+                                </blockquote>
+                                <div class="rating">
+                                    <div class="review-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                                <h4 class="reviewer"><i class="fa fa-user"></i> Ram Bahadur </h4>
                             </div>
 
-                            <button type="submit" class="btn btn-all">Submit</button>
+                            <div class="review-item">
+                                <blockquote>
+                                    Great price and radsrecommended by my plumber, one was damaged,
+                                    no problem - next day pick up and drop off replacement.
+                                </blockquote>
+                                <div class="rating">
+                                    <div class="review-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                                <h4 class="reviewer"><i class="fa fa-user"></i> Ram Bahadur </h4>
+                            </div>
 
                         </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6">
+                        <h3 class="mb-20">Want too say something about this product? Write a review</h3>
+                        <form method="post" action="#">
+                        <div class="row m-0-15">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="regFname">Full Name</label>
+                                    <input type="text" name="revFname" class="form-control" placeholder="Full Name">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <label for="revEmail">Email</label>
+                                    <input type="email" name="revEmail" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <label for="revTel">Contact</label>
+                                    <input type="tel" name="revTel" class="form-control" placeholder="Telephone">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label>Give a star</label>
+                                    <div class="clearfix">
+                                        <div class="rate">
+                                    <input type="radio" id="star5" name="rate" value="5" />
+                                    <label for="star5" title="text">5 stars</label>
+                                    <input type="radio" id="star4" name="rate" value="4" />
+                                    <label for="star4" title="text">4 stars</label>
+                                    <input type="radio" id="star3" name="rate" value="3" />
+                                    <label for="star3" title="text">3 stars</label>
+                                    <input type="radio" id="star2" name="rate" value="2" />
+                                    <label for="star2" title="text">2 stars</label>
+                                    <input type="radio" id="star1" name="rate" value="1" />
+                                    <label for="star1" title="text">1 star</label>
+                                </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-20">
+                                <div class="form-group">
+                                    <label for="revTel">Review Note</label>
+                                    <textarea class="form-control">
+
+                                    </textarea>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-all">Submit</button>
+                                </div>
+                            </div>
+                        </div>
                     </form>
+                    </div>
                 </div>
 
+
+                <div class="heading-all mb-20 mt-20">
+                    <h1>Related Products</h1>
+                    <hr/>
+                </div>
+
+                <div class="product-wrapper-container">
+                    <div class="row">
+                        <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+                            <div class="product-item">
+                                <div class="product-image">
+                                    <a href="#">
+                                        <img src="images/1.jpg" alt="img2">
+                                        <span class="off-tag-overlay">-10%</span>
+                                    </a>
+                                </div>
+                                <div class="product-caption">
+                                    <h4><a href="#">Winter Men’s Comfortable Cotton Fleece Tracksuit Set</a></h4>
+                                </div>
+                                <div class="product-price">
+                                    <span class="price-new">रु 44</span>
+                                    <span class="price-old">रु 59</span>
+                                </div>
+                                <div class="stock-availability">
+                                    <i class="far fa-check-circle"></i>
+                                    In stock
+                                </div>
+                                <div class="product-buttons-wrap">
+                                    <button class="button-action btn-sm d-inline-flex">
+                                        <i data-feather="shopping-cart"></i>
+                                        <span>Add to Cart</span>
+                                    </button>
+                                    <button class="button-action btn-wish btn-sm d-inline-flex">
+                                        <i data-feather="heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+                            <div class="product-item">
+                                <div class="product-image">
+                                    <a href="#">
+                                        <img src="images/2.jpg" alt="img2">
+                                    </a>
+                                </div>
+                                <div class="product-caption">
+                                    <h4><a href="#">Winter Men’s Comfortable Cotton Fleece Tracksuit Set</a></h4>
+                                </div>
+                                <div class="product-price">
+                                    <span class="price-new">रु 44</span>
+                                    <span class="price-old">रु 59</span>
+                                </div>
+                                <div class="stock-availability">
+                                    <i class="far fa-check-circle"></i>
+                                    In stock
+                                </div>
+                                <div class="product-buttons-wrap">
+                                    <button class="button-action btn-sm d-inline-flex">
+                                        <i data-feather="shopping-cart"></i>
+                                        <span>Add to Cart</span>
+                                    </button>
+                                    <button class="button-action btn-wish btn-sm d-inline-flex">
+                                        <i data-feather="heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+                            <div class="product-item">
+                                <div class="product-image">
+                                    <a href="#">
+                                        <img src="images/4.jpg" alt="img2">
+                                    </a>
+                                </div>
+                                <div class="product-caption">
+                                    <h4><a href="#">Winter Men’s Comfortable Cotton Fleece Tracksuit Set</a></h4>
+                                </div>
+                                <div class="product-price">
+                                    <span class="price-new">रु 44</span>
+                                    <span class="price-old">रु 59</span>
+                                </div>
+                                <div class="stock-availability">
+                                    <i class="far fa-check-circle"></i>
+                                    In stock
+                                </div>
+                                <div class="product-buttons-wrap">
+                                    <button class="button-action btn-sm d-inline-flex">
+                                        <i data-feather="shopping-cart"></i>
+                                        <span>Add to Cart</span>
+                                    </button>
+                                    <button class="button-action btn-wish btn-sm d-inline-flex">
+                                        <i data-feather="heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+                            <div class="product-item">
+                                <div class="product-image">
+                                    <a href="#">
+                                        <img src="images/5.jpg" alt="img2">
+                                        <span class="off-tag-overlay">-10%</span>
+                                    </a>
+                                </div>
+                                <div class="product-caption">
+                                    <h4><a href="#">Winter Men’s Comfortable Cotton Fleece Tracksuit Set</a></h4>
+                                </div>
+                                <div class="product-price">
+                                    <span class="price-new">रु 44</span>
+                                    <span class="price-old">रु 59</span>
+                                </div>
+                                <div class="stock-availability">
+                                    <i class="far fa-check-circle"></i>
+                                    In stock
+                                </div>
+                                <div class="product-buttons-wrap">
+                                    <button class="button-action btn-sm d-inline-flex">
+                                        <i data-feather="shopping-cart"></i>
+                                        <span>Add to Cart</span>
+                                    </button>
+                                    <button class="button-action btn-wish btn-sm d-inline-flex">
+                                        <i data-feather="heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+                            <div class="product-item">
+                                <div class="product-image">
+                                    <a href="#">
+                                        <img src="images/7.jpg" alt="img2">
+                                        <span class="off-tag-overlay">-10%</span>
+                                    </a>
+                                </div>
+                                <div class="product-caption">
+                                    <h4><a href="#">Winter Men’s Comfortable Cotton Fleece Tracksuit Set</a></h4>
+                                </div>
+                                <div class="product-price">
+                                    <span class="price-new">रु 44</span>
+                                    <span class="price-old">रु 59</span>
+                                </div>
+                                <div class="stock-availability">
+                                    <i class="far fa-check-circle"></i>
+                                    In stock
+                                </div>
+                                <div class="product-buttons-wrap">
+                                    <button class="button-action btn-sm d-inline-flex">
+                                        <i data-feather="shopping-cart"></i>
+                                        <span>Add to Cart</span>
+                                    </button>
+                                    <button class="button-action btn-wish btn-sm d-inline-flex">
+                                        <i data-feather="heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+                            <div class="product-item">
+                                <div class="product-image">
+                                    <a href="#">
+                                        <img src="images/9.jpg" alt="img2">
+                                        <span class="off-tag-overlay">-10%</span>
+                                    </a>
+                                </div>
+                                <div class="product-caption">
+                                    <h4><a href="#">Winter Men’s Comfortable Cotton Fleece Tracksuit Set</a></h4>
+                                </div>
+                                <div class="product-price">
+                                    <span class="price-new">रु 44</span>
+                                    <span class="price-old">रु 59</span>
+                                </div>
+                                <div class="stock-availability">
+                                    <i class="far fa-check-circle"></i>
+                                    In stock
+                                </div>
+                                <div class="product-buttons-wrap">
+                                    <button class="button-action btn-sm d-inline-flex">
+                                        <i data-feather="shopping-cart"></i>
+                                        <span>Add to Cart</span>
+                                    </button>
+                                    <button class="button-action btn-wish btn-sm d-inline-flex">
+                                        <i data-feather="heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+                            <div class="product-item">
+                                <div class="product-image">
+                                    <a href="#">
+                                        <img src="images/1.jpg" alt="img2">
+                                        <span class="off-tag-overlay">-10%</span>
+                                    </a>
+                                </div>
+                                <div class="product-caption">
+                                    <h4><a href="#">Winter Men’s Comfortable Cotton Fleece Tracksuit Set</a></h4>
+                                </div>
+                                <div class="product-price">
+                                    <span class="price-new">रु 44</span>
+                                    <span class="price-old">रु 59</span>
+                                </div>
+                                <div class="stock-availability">
+                                    <i class="far fa-check-circle"></i>
+                                    In stock
+                                </div>
+                                <div class="product-buttons-wrap">
+                                    <button class="button-action btn-sm d-inline-flex">
+                                        <i data-feather="shopping-cart"></i>
+                                        <span>Add to Cart</span>
+                                    </button>
+                                    <button class="button-action btn-wish btn-sm d-inline-flex">
+                                        <i data-feather="heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+                            <div class="product-item">
+                                <div class="product-image">
+                                    <a href="#">
+                                        <img src="images/2.jpg" alt="img2">
+                                    </a>
+                                </div>
+                                <div class="product-caption">
+                                    <h4><a href="#">Winter Men’s Comfortable Cotton Fleece Tracksuit Set</a></h4>
+                                </div>
+                                <div class="product-price">
+                                    <span class="price-new">रु 44</span>
+                                    <span class="price-old">रु 59</span>
+                                </div>
+                                <div class="stock-availability">
+                                    <i class="far fa-check-circle"></i>
+                                    In stock
+                                </div>
+                                <div class="product-buttons-wrap">
+                                    <button class="button-action btn-sm d-inline-flex">
+                                        <i data-feather="shopping-cart"></i>
+                                        <span>Add to Cart</span>
+                                    </button>
+                                    <button class="button-action btn-wish btn-sm d-inline-flex">
+                                        <i data-feather="heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+                            <div class="product-item">
+                                <div class="product-image">
+                                    <a href="#">
+                                        <img src="images/4.jpg" alt="img2">
+                                    </a>
+                                </div>
+                                <div class="product-caption">
+                                    <h4><a href="#">Winter Men’s Comfortable Cotton Fleece Tracksuit Set</a></h4>
+                                </div>
+                                <div class="product-price">
+                                    <span class="price-new">रु 44</span>
+                                    <span class="price-old">रु 59</span>
+                                </div>
+                                <div class="stock-availability">
+                                    <i class="far fa-check-circle"></i>
+                                    In stock
+                                </div>
+                                <div class="product-buttons-wrap">
+                                    <button class="button-action btn-sm d-inline-flex">
+                                        <i data-feather="shopping-cart"></i>
+                                        <span>Add to Cart</span>
+                                    </button>
+                                    <button class="button-action btn-wish btn-sm d-inline-flex">
+                                        <i data-feather="heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+                            <div class="product-item">
+                                <div class="product-image">
+                                    <a href="#">
+                                        <img src="images/5.jpg" alt="img2">
+                                        <span class="off-tag-overlay">-10%</span>
+                                    </a>
+                                </div>
+                                <div class="product-caption">
+                                    <h4><a href="#">Winter Men’s Comfortable Cotton Fleece Tracksuit Set</a></h4>
+                                </div>
+                                <div class="product-price">
+                                    <span class="price-new">रु 44</span>
+                                    <span class="price-old">रु 59</span>
+                                </div>
+                                <div class="stock-availability">
+                                    <i class="far fa-check-circle"></i>
+                                    In stock
+                                </div>
+                                <div class="product-buttons-wrap">
+                                    <button class="button-action btn-sm d-inline-flex">
+                                        <i data-feather="shopping-cart"></i>
+                                        <span>Add to Cart</span>
+                                    </button>
+                                    <button class="button-action btn-wish btn-sm d-inline-flex">
+                                        <i data-feather="heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+                            <div class="product-item">
+                                <div class="product-image">
+                                    <a href="#">
+                                        <img src="images/7.jpg" alt="img2">
+                                        <span class="off-tag-overlay">-10%</span>
+                                    </a>
+                                </div>
+                                <div class="product-caption">
+                                    <h4><a href="#">Winter Men’s Comfortable Cotton Fleece Tracksuit Set</a></h4>
+                                </div>
+                                <div class="product-price">
+                                    <span class="price-new">रु 44</span>
+                                    <span class="price-old">रु 59</span>
+                                </div>
+                                <div class="stock-availability">
+                                    <i class="far fa-check-circle"></i>
+                                    In stock
+                                </div>
+                                <div class="product-buttons-wrap">
+                                    <button class="button-action btn-sm d-inline-flex">
+                                        <i data-feather="shopping-cart"></i>
+                                        <span>Add to Cart</span>
+                                    </button>
+                                    <button class="button-action btn-wish btn-sm d-inline-flex">
+                                        <i data-feather="heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+                            <div class="product-item">
+                                <div class="product-image">
+                                    <a href="#">
+                                        <img src="images/9.jpg" alt="img2">
+                                        <span class="off-tag-overlay">-10%</span>
+                                    </a>
+                                </div>
+                                <div class="product-caption">
+                                    <h4><a href="#">Winter Men’s Comfortable Cotton Fleece Tracksuit Set</a></h4>
+                                </div>
+                                <div class="product-price">
+                                    <span class="price-new">रु 44</span>
+                                    <span class="price-old">रु 59</span>
+                                </div>
+                                <div class="stock-availability">
+                                    <i class="far fa-check-circle"></i>
+                                    In stock
+                                </div>
+                                <div class="product-buttons-wrap">
+                                    <button class="button-action btn-sm d-inline-flex">
+                                        <i data-feather="shopping-cart"></i>
+                                        <span>Add to Cart</span>
+                                    </button>
+                                    <button class="button-action btn-wish btn-sm d-inline-flex">
+                                        <i data-feather="heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- row end -->
+                </div><!-- product-wrapper-container end -->
+
             </div>
-        </div><!-- row end -->
+        </div>
+        </div>  <!-- row end -->
+
     </div><!-- container end -->
 </main><!-- section-all end -->
 
@@ -648,7 +1227,40 @@
     });
 </script>
 <script src="./js/owl.carousel.min.js"></script>
-<script src="./js/jquery.matchHeight-min.js"></script>
+<script src="js/slick.min.js"></script>
+<script>
+
+    // PRODUCT DETAILS SLICK
+    $('#product-main-view').slick({
+        infinite: true,
+        speed: 300,
+        dots: false,
+        arrows: false,
+        fade: true,
+        asNavFor: '#product-view'
+    });
+
+    $('#product-view').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: false,
+        centerMode: true,
+        focusOnSelect: true,
+        asNavFor: '#product-main-view'
+    });
+</script>
+<script src="js/jquery.jqZoom.js"></script>
+<script>
+    $(function(){
+        $(".zoom-box img").jqZoom({
+            selectorWidth: 30,
+            selectorHeight: 30,
+            viewerWidth: 720,
+            viewerHeight: 550
+        });
+
+    })
+</script>
 <script src="./js/script/script.js"></script>
 
 </body>

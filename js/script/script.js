@@ -87,11 +87,6 @@ $(function() {
     $('[data-toggle="tooltip"]').tooltip()
 })
 
-// match height js
-$('.event-post .entry-container').matchHeight();
-
-$('.project-post .entry-container').matchHeight();
-
 // PRODUCT DETAILS SLICK
 // $('#product-main-view').slick({
 //     infinite: true,

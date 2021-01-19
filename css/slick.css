@@ -316,3 +316,17 @@
     opacity: .75;
     color: black;
 }
+.slick-active img:focus {
+    border: none;
+    outline: none;
+}
+.slick-slide:focus{
+    outline: none !important;
+}
+#product-view .product-view {
+    margin: 5px;
+    border: 2px solid #dddddd;
+}
+#product-view .product-view.slick-current  {
+    border-color: #d02122 !important;
+}
