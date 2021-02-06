@@ -278,7 +278,7 @@
             <ul>
                 <li><a href="#"><i class="fa fa-home"></i> </a> </li>
                 <li><a href="#">Account</a></li>
-                <li class="active">Login</li>
+                <li class="active">Vendor Login</li>
             </ul>
         </div>
     </div><!-- container end -->
@@ -286,76 +286,131 @@
 
 <main class="section-all">
     <div class="container">
-        <div class="heading-all inner-heading  mb-20">
-            <h1>Account Login</h1>
-        </div>
+
         <div class="row">
-            <div class="col-12 col-sm-12 col-md-6">
-                <div class="common-box">
+            <div class="col-12 col-sm-7 col-md-7">
+                <div class="common-box mb-20">
                     <div class="heading align-items-center">
                         <div class="heading-icon">
-                            <i class="fas fa-exchange-alt"></i>
+                            <i class="fas fa-mouse-pointer"></i>
                         </div>
                         <div class="heading-text">
-                            <h2>Returning Customer</h2>
-                            <p>Iam Returning Customer</p>
+                            <h2>Become seller on Discount Box</h2>
                         </div>
                     </div>
-                        <div class="form-wrap">
-                            <div class="row">
-                                <div class="form-group col-12">
-                                    <label for="logEmail">Email</label>
-                                    <input type="email" name="logEmail" class="form-control" placeholder="Your Email">
-                                </div>
-                                <div class="form-group col-12">
-                                    <label for="logPassword">Password</label>
-                                    <input type="password" name="logPassword" class="form-control" placeholder="Your Password">
-                                    <a href="#" class="small">Forgot Password</a>
-                                </div>
-
-                                <div class="mb-10 col-12">
-                                    <button type="submit" class="btn btn-all">Login</button>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-12 col-md-6">
-                <div class="common-box">
-                    <div class="heading align-items-center">
-                        <div class="heading-icon">
-                            <i class="fas fa-user-plus"></i>
-                        </div>
-                        <div class="heading-text">
-                            <h2>New Customer</h2>
-                            <p>I am a new customer</p>
-                        </div>
-                    </div>
-                        <div class="form-wrap">
-                            <div class="row">
-                                <div class="col-12 mt-20 mb-20">
-                                    <h4>Register an Account</h4>
-                                    <p>By creating an account you will be able to order faster, be up to date on an order's status,
-                                        keep track of the order you have previously made.</p>
-
-                                    <a href="#" class="btn btn-all">Register</a>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-
-                <div class="common-box">
                     <div class="form-wrap">
                         <div class="row">
-                            <div class="col-12">
-                                <a href="#" class="btn login-btn login_facebook"><i class="fab fa-facebook-f"></i>Login with facebook</a>
-                                <a href="#" class="btn login-btn login_google"><i class="fab fa-google"></i>Login with Google</a>
+                            <div class="form-group col-12">
+                                <label for="businessName">Business / Firm Name *</label>
+                                <input type="text" id="businessName" class="form-control">
+                            </div>
+                            <div class="form-group col-12">
+                                <label for="businessDescription">Description About Your Business & Products</label>
+                                <textarea class="form-control">
+                                </textarea>
+                            </div>
+                            <div class="form-group col-12 col-md-6">
+                                <label for="ownerFName">Business Owner first Name *</label>
+                                <input type="text" id="ownerFName" class="form-control">
+                            </div>
+                            <div class="form-group col-12 col-md-6">
+                                <label for="ownerLName">Business Owner Last Name *</label>
+                                <input type="text" id="ownerLName" class="form-control">
+                            </div>
+                            <div class="form-group col-12 col-md-6">
+                                <label for="businessEmail">Business Email *</label>
+                                <input type="email" id="businessEmail" class="form-control">
+                            </div>
+                            <div class="form-group col-12 col-md-6">
+                                <label for="businessPhone">Business Phone Number *</label>
+                                <input type="tel" id="businessPhone" class="form-control">
+                            </div>
+                            <div class="form-group col-12">
+                                <label for="businessOwnerPhone">Owner Contact Number *</label>
+                                <input type="text" id="businessOwnerPhone" class="form-control">
+                            </div>
+                            <div class="form-group col-12">
+                                <label for="websiteAddress">Website address</label>
+                                <input type="text" id="websiteAddress" class="form-control">
+                            </div>
+
+                            <div class="form-group col-12">
+                                <label for="panNumber">Business PAN Number</label>
+                                <input type="text" id="panNumber" class="form-control">
+                            </div>
+                            <div class="form-group col-12">
+                                <label for="busnessAddress">Business Address</label>
+                                <input type="text" id="busnessAddress" class="form-control">
+                            </div>
+                            <div class="form-group col-12 col-sm-4">
+                                <label for="countryName">Select Country</label>
+                                <select class="form-control" disabled>
+                                    <option selected="true">Nepal</option>
+                                    <option>India</option>
+                                    <option>China</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-12 col-sm-4">
+                                <label for="stateName">Select Provience</label>
+                                <select class="form-control">
+                                    <option selected="true">Bagmati</option>
+                                    <option>Provience 5</option>
+                                    <option>Karnai</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-12 col-sm-4">
+                                <label for="CityName">City</label>
+                                <input type="text" id="CityName" class="form-control">
+                            </div>
+                            <div class="form-group col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="policy">
+                                    <label for="policy">I hereby, accept the Terms and Conditions & I have legal rights to register as a seller in DiscountBox
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="mb-10 col-12">
+                                <button type="submit" class="btn btn-all">Register</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="col-12 col-sm-5 col-md-5">
+                <div class="heading-all">
+                    <h1>Become Successful Seller</h1>
+                    <hr class="w-100">
+                </div>
+                <div class="mt-20 mb-30 text-center">
+                    <img src="images/seller.svg" alt="seller">
+                </div>
+                <div class="steps-list">
+                    <div class="step-list-item">
+                        <span class="step-number">1</span>
+                        <h4>Register your business with PAN/VAT</h4>
+                        <p>Fill up form with details of your business and list your products with relevant information.</p>
+                    </div>
+                    <div class="step-list-item">
+                        <span class="step-number">2</span>
+                        <h4>Receive orders and sell over Nepal</h4>
+                        <p>
+                            Sell your products once products are listed, once you get order just package the order and leave the worry to us.
+                        </p>
+                    </div>
+                    <div class="step-list-item">
+                        <span class="step-number">3</span>
+                        <h4>Get payments and grow your business</h4>
+                        <p>
+                            Now you can get your payments directly to your account and grow your business.
+                        </p>
+                    </div>
+                </div>
+
+
+
+            </div>
+
         </div>
     </div>
 </main>

@@ -31,12 +31,12 @@ $(document).ready(function() {
     })
 })
 
-    var sNav = $('.header-top .social-link').clone();
-    var topNav = $('.left-menu').clone();
-
+    var sNav = $('.top-info-menu').clone();
+    var accountInfo = $('.btm-header-links').clone();
     if( $(window).width() < 992) {
-        $(topNav).prependTo('#navbarCollapse');
-        $(sNav).prependTo('#navbarCollapse');
+        // $(topNav).prependTo('#navbarCollapse');
+        $(sNav).appendTo('#navbarCollapse');
+        $(accountInfo).appendTo('.header-top .right-menu');
     }
 
 $('body').on('click','.aboutBtnMore', function(){
