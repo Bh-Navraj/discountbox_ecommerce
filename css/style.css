@@ -1863,7 +1863,8 @@ img {
     background: #DD4B39;
 }
 
-.filter-content-wrapper {
+.filter-content-wrapper,
+.sidebar-wrapper {
     position: -webkit-sticky;
     position: sticky;
     top: 30px;
@@ -1871,6 +1872,7 @@ img {
     padding: 10px;
     border-radius: 3px;
 }
+
 
 .filter-content h1,
 .filter-content h2,
@@ -2289,6 +2291,9 @@ img {
     padding-left: 10px;
     margin-top: 3px;
 }
+
+/*------ Vendor CSS ------*/
+
 .steps-list,.step-list-item {
     position: relative;
 }
@@ -2312,6 +2317,18 @@ img {
     font-width: 900;
     color: #ffffff;
     text-align: center;
+}
+.dashboard-sidebar {
+    padding: 0;
+}
+.sidebar-menu ul {
+    list-style: none;
+}
+.sidebar-menu ul li a {
+    font-weight: 700;
+    display: block;
+    padding: 10px 15px;
+    border-bottom: 1px solid #dddddd;
 }
 
 /*----- Responsive CSS -----*/
