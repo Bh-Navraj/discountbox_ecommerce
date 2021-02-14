@@ -2349,11 +2349,16 @@ span .product-size input[type="checkbox"]:checked + label span {
 }
 .dashboard-sidebar {
   padding: 0;
+  background-color: #333333;
 }
 .sidebar-menu ul {
   list-style: none;
 }
+.sidebar-menu ul li.active {
+  background-color: #d02122;
+}
 .sidebar-menu ul li a {
+  color: #ffffff;
   font-weight: 700;
   display: block;
   padding: 10px 15px;
@@ -2546,4 +2551,9 @@ span .product-size input[type="checkbox"]:checked + label span {
     height: 120px;
     object-fit: cover;
   }
+}
+
+/* Products page css started */
+.product-state div span {
+  margin-right: 3px;
 }
