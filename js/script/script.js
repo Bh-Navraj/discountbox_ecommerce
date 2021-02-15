@@ -137,3 +137,5 @@ $("#products").DataTable({
   scrollCollapse: true,
   columnDefs: [{ width: "20%", targets: 1 }],
 });
+
+$("#orders").DataTable();
