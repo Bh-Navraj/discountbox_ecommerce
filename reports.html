@@ -461,10 +461,10 @@
                   <li>
                     <a href="./products.html">Products</a>
                   </li>
-                  <li class="active">
+                  <li>
                     <a href="#">Orders</a>
                   </li>
-                  <li>
+                  <li class="active">
                     <a href="#">Coupons</a>
                   </li>
                   <li>
@@ -481,148 +481,107 @@
             </div>
           </aside>
           <div class="col-lg-9 col-md-8 col-sm-12">
-            <div class="product-state d-flex justify-content-between mb-3">
-              <div>
-                <span>
-                  <small><a href="#">All(25)</a></small>
-                </span>
-                <span>
-                  <small><a href="#">Completed(15)</a></small>
-                </span>
-                <span>
-                  <small><a href="#">Processing(5)</a></small>
-                </span>
-                <span>
-                  <small><a href="#">On-hold(0)</a></small>
-                </span>
-                <span>
-                  <small><a href="#">Pending(15)</a></small>
-                </span>
-                <span>
-                  <small><a href="#">Cancelled(5)</a></small>
-                </span>
-                <span>
-                  <small><a href="#">Refunded(0)</a></small>
-                </span>
-              </div>
+            <div class="d-flex justify-content-between mb-3">
+              <h2 style="font-size: 2rem">Reports</h2>
             </div>
-            <div class="table-responsive">
-              <table class="table table-striped" id="orders" width="100%">
-                <thead>
-                  <tr>
-                    <th scope="col">Order</th>
-                    <th scope="col">Order Total</th>
-                    <th scope="col">Status</th>
-                    <th scope="col">Customer</th>
-                    <th scope="col">Date</th>
-                    <th scope="col">Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td scope="row"><a href="#">Order #123</a></td>
-                    <td>Rs.50</td>
-                    <td><span class="badge badge-warning">on-hold</span></td>
-                    <td>Sajan Kc</td>
-                    <td>2020/02/13</td>
-                    <td>
-                      <span class="product-action">
-                        <a href="#" title="Processing">
-                          <i class="far fa-clock"></i>
-                        </a>
-                      </span>
-                      |
-                      <span class="product-action">
-                        <a href="#" title="Completed">
-                          <i class="fas fa-check"></i>
-                        </a>
-                      </span>
-                      |
-                      <span class="product-action">
-                        <a href="#" title="View">
-                          <i class="far fa-eye"></i>
-                        </a>
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td scope="row"><a href="#">Order #123</a></td>
-                    <td>Rs.50</td>
-                    <td><span class="badge badge-success">completed</span></td>
-                    <td>Sajan Kc</td>
-                    <td>2020/02/13</td>
-                    <td>
-                      <span class="product-action">
-                        <a href="#" title="Processing">
-                          <i class="far fa-clock"></i>
-                        </a>
-                      </span>
-                      |
-                      <span class="product-action">
-                        <a href="#" title="Completed"
-                          ><i class="fas fa-check"></i></a
-                      ></span>
-                      |
-                      <span class="product-action">
-                        <a href="#" title="View">
-                          <i class="far fa-eye"></i>
-                        </a>
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td scope="row"><a href="#">Order #123</a></td>
-                    <td>Rs.50</td>
-                    <td><span class="badge badge-success">completed</span></td>
-                    <td>Sajan Kc</td>
-                    <td>2020/02/13</td>
-                    <td>
-                      <span class="product-action">
-                        <a href="#" title="Processing"
-                          ><i class="far fa-clock"></i
-                        ></a>
-                      </span>
-                      |
-                      <span class="product-action">
-                        <a href="#" title="Completed"
-                          ><i class="fas fa-check"></i></a
-                      ></span>
-                      |
-                      <span class="product-action">
-                        <a href="#" title="View">
-                          <i class="far fa-eye"></i>
-                        </a>
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td scope="row"><a href="#">Order #123</a></td>
-                    <td>Rs.50</td>
-                    <td><span class="badge badge-warning">on-hold</span></td>
-                    <td>Sajan Kc</td>
-                    <td>2020/02/13</td>
-                    <td>
-                      <span class="product-action">
-                        <a href="#" title="Processing">
-                          <i class="far fa-clock"></i>
-                        </a>
-                      </span>
-                      |
-                      <span class="product-action">
-                        <a href="#" title="Completed">
-                          <i class="fas fa-check"></i>
-                        </a>
-                      </span>
-                      |
-                      <span class="product-action">
-                        <a href="#" title="View">
-                          <i class="far fa-eye"></i>
-                        </a>
-                      </span>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+            <div class="row">
+              <div class="col">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      id="home-tab"
+                      data-toggle="tab"
+                      href="#overview"
+                      role="tab"
+                      aria-controls="home"
+                      aria-selected="true"
+                      >Overview</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      id="profile-tab"
+                      data-toggle="tab"
+                      href="#salesbyday"
+                      role="tab"
+                      aria-controls="profile"
+                      aria-selected="false"
+                      >Sales by day</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      id="contact-tab"
+                      data-toggle="tab"
+                      href="#topseller"
+                      role="tab"
+                      aria-controls="contact"
+                      aria-selected="false"
+                      >Top Sellers</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      id="contact-tab"
+                      data-toggle="tab"
+                      href="#topearner"
+                      role="tab"
+                      aria-controls="contact"
+                      aria-selected="false"
+                      >Top earners</a
+                    >
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="overview"
+                    role="tabpanel"
+                    aria-labelledby="home-tab"
+                  >
+                    <div class="row mt-3" style="margin: 0;">
+                         <div class="col-3 order-left">
+                              <ul>
+                                   <li>
+                                        <big>Rs. 500</big> <br/>
+                                        <span>Sales in this period</span>
+                                        <hr class="order-breaker">
+                                   </li>
+                              </ul>
+                         </div>
+                         <div class="col order-right">col2</div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="salesbyday"
+                    role="tabpanel"
+                    aria-labelledby="profile-tab"
+                  >
+                    Sales by day here...
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="topseller"
+                    role="tabpanel"
+                    aria-labelledby="contact-tab"
+                  >
+                    top seller here....
+                  </div>
+                  <div
+                  class="tab-pane fade"
+                  id="topearner"
+                  role="tabpanel"
+                  aria-labelledby="contact-tab"
+                >
+                  top earner here....
+                </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
