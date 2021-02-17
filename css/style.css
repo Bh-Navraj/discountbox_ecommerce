@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  background: #f2f2f2;
+  background: #eeeeee;
   color: #333333;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -675,7 +675,7 @@ img {
   top: calc(100% + 20px);
   left: 0;
   visibility: hidden;
-  z-index: 99;
+  z-index: 9999;
   opacity: 0;
   transition: all ease-in-out 0.3s;
 }
@@ -2288,7 +2288,7 @@ span .product-size input[type="checkbox"]:checked + label span {
   border: 1px solid rgb(239, 237, 240);
   display: none;
   overflow: hidden;
-  z-index: 999999;
+  /*z-index: 999999;*/
 }
 .zoom-box .viewer-box > img {
   position: absolute;
@@ -2299,9 +2299,7 @@ span .product-size input[type="checkbox"]:checked + label span {
 }
 #product-main-view {
 }
-#product-main-view .slick-list {
-  overflow: visible;
-}
+
 #product-main-view .slick-list,
 #product-main-view .slick-list .slick-track {
   -webkit-transform: none;
@@ -2315,9 +2313,18 @@ span .product-size input[type="checkbox"]:checked + label span {
   position: -webkit-sticky;
   top: 20px;
 }
+#product-detail-gallery {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 5px;
+  z-index: 99;
+}
 .form-check label {
   padding-left: 10px;
   margin-top: 3px;
+}
+.short-description ul {
+  margin-left: 20px;
 }
 
 /*------ Vendor CSS ------*/
@@ -2378,6 +2385,9 @@ span .product-size input[type="checkbox"]:checked + label span {
   }
   .row {
     margin: 0 -20px;
+  }
+  .row.m-0-15 .row.m-0-15 {
+    margin: 0 -15px;
   }
 }
 
