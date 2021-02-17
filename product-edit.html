@@ -23,6 +23,15 @@
       href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css"
     />
 
+    <!-- tiny text editor -->
+    <script
+      src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js"
+      referrerpolicy="origin"
+    ></script>
+    <script>
+      tinymce.init({ selector: "#product-details" });
+    </script>
+
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/fontawesome-all.min.css" />
@@ -528,7 +537,89 @@
                     role="tabpanel"
                     aria-labelledby="home-tab"
                   >
-                    edit
+                    <div class="my-3">
+                      <form action="#">
+                        <div class="form-group mb-3">
+                          <label for="product-image"
+                            >Upload Product Image
+                          </label>
+                          <input type="file" class="" id="product-image" />
+                        </div>
+
+                        <div class="form-group">
+                          <label for="product-name">Product name</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="product-name"
+                          />
+                        </div>
+                        <label for="product-name">Product price</label>
+                        <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">Rs.</div>
+                          </div>
+                          <input
+                            type="text"
+                            class="form-control mr-2"
+                            id="inlineFormInputGroup"
+                            value=""
+                          />
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="discounted-price"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="discounted-price"
+                            >
+                              Discounted Price
+                            </label>
+                          </div>
+                        </div>
+                        <div class="input-group date">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">From</div>
+                          </div>
+                          <input type="date" class="form-control mr-2" />
+
+                          <div class="input-group-prepend ml-2">
+                            <div class="input-group-text">To</div>
+                          </div>
+                          <input type="date" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                          <label for="product-shortnote"
+                            >Product Shortnote</label
+                          >
+                          <textarea
+                            class="form-control"
+                            id="product-shortnote"
+                            rows="3"
+                          ></textarea>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="categories">Category</label>
+                          <select class="form-control" id="categories">
+                            <option>Bags</option>
+                            <option>Caps</option>
+                            <option>Mobile</option>
+                            <option>Computer</option>
+                            <option>TV</option>
+                          </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-all mt-2">
+                          Update Product
+                        </button>
+                      </form>
+                    </div>
+                    <textarea id="product-details"></textarea>
                   </div>
                   <div
                     class="tab-pane fade"
@@ -536,7 +627,7 @@
                     role="tabpanel"
                     aria-labelledby="profile-tab"
                   >
-                  options
+                    options
                   </div>
                   <div
                     class="tab-pane fade"
@@ -548,7 +639,6 @@
                   </div>
                 </div>
               </div>
-              <div class="col"></div>
             </div>
           </div>
         </div>
