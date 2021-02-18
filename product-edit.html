@@ -769,14 +769,14 @@
                               <div class="table-responsive my-3">
                                  <table class="product-options-table">
                                     <tr>
-                                       <td>
+                                       <td class="table-col-left">
                                           <label
                                              for="product-shortnote"
                                              style="width: 140px"
                                              >Purchase Note
                                           </label>
                                        </td>
-                                       <td>
+                                       <td class="table-col-right">
                                           <textarea
                                              class="form-control"
                                              id="product-shortnote"
@@ -785,12 +785,12 @@
                                        </td>
                                     </tr>
                                     <tr>
-                                       <td style="text-align: right">
+                                       <td class="table-col-left">
                                           <label for="review-check">
                                              Reviews
                                           </label>
                                        </td>
-                                       <td>
+                                       <td class="table-col-right">
                                           <input
                                              type="checkbox"
                                              id="review-check"
@@ -799,12 +799,12 @@
                                        </td>
                                     </tr>
                                     <tr>
-                                       <td style="text-align: right">
-                                          <label for="category-option"
-                                             >Visibility</label
-                                          >
+                                       <td class="table-col-left">
+                                          <label for="category-option">
+                                             Visibility
+                                          </label>
                                        </td>
-                                       <td>
+                                       <td class="table-col-right">
                                           <select
                                              class="form-control"
                                              id="category-option"
@@ -826,7 +826,85 @@
                               role="tabpanel"
                               aria-labelledby="contact-tab"
                            >
-                              inventory
+                              <div class="table-responsive my-3">
+                                 <table class="product-options-table">
+                                    <tr>
+                                       <td class="table-col-left">
+                                          <label
+                                             for="product-sku"
+                                             style="width: 140px"
+                                             >SKU
+                                          </label>
+                                       </td>
+                                       <td class="table-col-right">
+                                          <input id="product-sku" type="text" />
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="table-col-left">
+                                          <label for="review-check">
+                                             Manage Stock?
+                                          </label>
+                                       </td>
+                                       <td class="table-col-right">
+                                          <input
+                                             type="checkbox"
+                                             id="review-check"
+                                          />
+                                          Enable stock management at product
+                                          level
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="table-col-left">
+                                          <label
+                                             for="product-qty"
+                                             style="width: 140px"
+                                             >Stock Qty
+                                          </label>
+                                       </td>
+                                       <td class="table-col-right">
+                                          <input id="product-qty" type="text" />
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="table-col-left">
+                                          <label
+                                             for="product-status"
+                                             style="width: 140px"
+                                             >Stock Status
+                                          </label>
+                                       </td>
+                                       <td class="table-col-right">
+                                          <select
+                                             class="form-control"
+                                             id="category-option"
+                                          >
+                                             <option>Instock</option>
+                                             <option>none</option>
+                                             <option>none</option>
+                                             <option>none</option>
+                                          </select>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="table-col-left">
+                                          <label for="product-backorder">
+                                             Allow Backorders
+                                          </label>
+                                       </td>
+                                       <td class="table-col-right">
+                                          <select
+                                             class="form-control"
+                                             id="category-option"
+                                          >
+                                             <option>Do not allow</option>
+                                             <option>allow</option>
+                                          </select>
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </div>
                            </div>
                         </div>
                      </div>
@@ -858,11 +936,11 @@
                                  name="files"
                                  multiple
                               /><br /><br />
-                              <input class="btn btn-all bg-success" type="submit" />
-                           <!-- </form>
-                           <a href="#" class="btn btn-all bg-success">
-                              + Add Product Image
-                           </a> -->
+                              <input
+                                 class="btn btn-all bg-success"
+                                 type="submit"
+                              />
+                           </form>
                         </div>
                      </div>
                   </div>
