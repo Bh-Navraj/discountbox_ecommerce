@@ -651,6 +651,18 @@
                                  >Inventory</a
                               >
                            </li>
+                           <li class="nav-item">
+                              <a
+                                 class="nav-link"
+                                 id="contact-tab"
+                                 data-toggle="tab"
+                                 href="#shipping"
+                                 role="tab"
+                                 aria-controls="contact"
+                                 aria-selected="false"
+                                 >Shipping</a
+                              >
+                           </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
                            <div
@@ -901,6 +913,86 @@
                                              <option>Do not allow</option>
                                              <option>allow</option>
                                           </select>
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </div>
+                           </div>
+                           <div
+                              class="tab-pane fade"
+                              id="shipping"
+                              role="tabpanel"
+                              aria-labelledby="contact-tab"
+                           >
+                              <div class="table-responsive my-3">
+                                 <table class="product-options-table">
+                                    <tr>
+                                       <td class="table-col-left">
+                                          <label for="product-weight"
+                                             >Weight (kg)
+                                          </label>
+                                       </td>
+                                       <td class="table-col-right">
+                                          <input
+                                             class="form-control"
+                                             id="product-weight"
+                                             type="text"
+                                          />
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="table-col-left">
+                                          <label
+                                             for="product-dimensions"
+                                             style="width: 140px"
+                                             >Dimensions (cm)
+                                          </label>
+                                       </td>
+                                       <td class="table-col-right d-flex">
+                                          <input
+                                             type="number"
+                                             class="form-control mr-2"
+                                             id="product-dimensions"
+                                             placeholder="length"
+                                          />
+                                          <input
+                                             type="number"
+                                             class="form-control mr-2"
+                                             id="product-dimensions"
+                                             placeholder="width"
+                                          />
+                                          <input
+                                             type="number"
+                                             class="form-control"
+                                             id="product-dimensions"
+                                             placeholder="height"
+                                          />
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="table-col-left">
+                                          <label for="category-option">
+                                             Shipping Class
+                                          </label>
+                                       </td>
+                                       <td class="table-col-right">
+                                          <select
+                                             class="form-control"
+                                             id="category-option"
+                                          >
+                                             <option>No ship</option>
+                                             <option>ship</option>
+                                             <option>null</option>
+                                             <option>null</option>
+                                             <option>null</option>
+                                          </select>
+                                          <span>
+                                             <small>
+                                                Sipping classes are used by
+                                                certain shipping methods to
+                                                group similar products.
+                                             </small>
+                                          </span>
                                        </td>
                                     </tr>
                                  </table>
