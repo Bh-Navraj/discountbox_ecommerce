@@ -2595,6 +2595,12 @@ span .product-size input[type="checkbox"]:checked + label span {
   box-shadow: none;
 }
 
+/* product edit page css started*/
+.product-options-table tr > td{
+  text-align: right;
+  padding: 5px;
+}
+
 /* order page css started */
 .order-left {
   border: 1px solid rgb(228, 228, 228);
