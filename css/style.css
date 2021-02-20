@@ -8,7 +8,7 @@ html {
 }
 
 body {
-   background: #eeeeee;
+   background: #dddddd;
    color: #333333;
    font-family: "Roboto", sans-serif;
    font-size: 1rem;
@@ -1486,7 +1486,7 @@ img {
 }
 .site-footer .background-white p {
    font-size: 14px;
-   color: #777777;
+   color: #333333;
 }
 .site-footer-info {
    padding: 10px 0;
