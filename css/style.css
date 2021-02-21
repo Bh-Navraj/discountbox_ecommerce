@@ -2644,3 +2644,28 @@ span .product-size input[type="checkbox"]:checked + label span {
 .report-left ul li span {
    font-size: 12px;
 }
+
+/* review page css started */
+.review__author img {
+   width: 50px;
+}
+
+.review__table__comment {
+   min-width: 320px;
+}
+
+.review__linkto {
+   width: 135px;
+}
+
+.review__rating {
+   min-width: 130px;
+}
+
+.review__comment__hover {
+   display: none;
+}
+
+.review__comment:hover .review__comment__hover {
+   display: block;
+}
