@@ -549,7 +549,7 @@
                               </a>
                            </li>
                            <li>
-                              <a href="#">
+                              <a href="reviews.html">
                                  <img
                                     src="images/icons/dashboard-review.svg"
                                     alt=""
@@ -558,7 +558,7 @@
                               </a>
                            </li>
                            <li>
-                              <a href="#">
+                              <a href="settings.html">
                                  <img
                                     src="images/icons/dashboard-settings.svg"
                                     alt=""
@@ -634,16 +634,53 @@
                               aria-labelledby="home-tab"
                            >
                               <div class="row mt-3" style="margin: 0">
-                                 <div class="col-3 order-left">
+                                 <div class="col-md-3 report-left py-2">
                                     <ul>
                                        <li>
                                           <big>Rs. 500</big> <br />
                                           <span>Sales in this period</span>
-                                          <hr class="order-breaker" />
+                                          <hr class="report-breaker" />
+                                       </li>
+                                       <li>
+                                          <big>Rs. 300</big> <br />
+                                          <span>Average daily sales</span>
+                                          <hr class="report-breaker" />
+                                       </li>
+                                       <li>
+                                          <big>5</big> <br />
+                                          <span>Order placed</span>
+                                          <hr class="report-breaker" />
+                                       </li>
+                                       <li>
+                                          <big>4</big> <br />
+                                          <span>items purchased</span>
+                                          <hr class="report-breaker" />
+                                       </li>
+                                       <li>
+                                          <big>Rs. 0</big> <br />
+                                          <span>Charged for shipping</span>
+                                          <hr class="report-breaker" />
+                                       </li>
+                                       <li>
+                                          <big>Rs. 0</big> <br />
+                                          <span>Worth of coupons used</span>
                                        </li>
                                     </ul>
                                  </div>
-                                 <div class="col order-right">col2</div>
+                                 <div class="mt-4 mt-md-0 col-md-9 order-right">
+                                    <div class="card card-chart">
+                                       <div class="card-header">
+                                          <h5 class="card-title">Sales</h5>
+                                       </div>
+                                       <div class="card-body">
+                                          <canvas
+                                             id="myChart"
+                                             aria-label="chart"
+                                             role="img"
+                                          ></canvas>
+                                       </div>
+                                    </div>
+                                 </div>
                               </div>
                            </div>
                            <div
@@ -652,7 +689,68 @@
                               role="tabpanel"
                               aria-labelledby="profile-tab"
                            >
-                              Sales by day here...
+                              <div class="input-group mt-3">
+                                 <div class="input-group-prepend">
+                                    <div class="input-group-text">From</div>
+                                 </div>
+                                 <input type="date" class="form-control mr-2" />
+
+                                 <div class="input-group-prepend ml-2">
+                                    <div class="input-group-text">To</div>
+                                 </div>
+                                 <input type="date" class="form-control" />
+                              </div>
+                              <div class="row mt-3" style="margin: 0">
+                                 <div class="col-md-3 report-left py-2">
+                                    <ul>
+                                       <li>
+                                          <big>Rs. 500</big> <br />
+                                          <span>Sales in this period</span>
+                                          <hr class="report-breaker" />
+                                       </li>
+                                       <li>
+                                          <big>Rs. 300</big> <br />
+                                          <span>Average daily sales</span>
+                                          <hr class="report-breaker" />
+                                       </li>
+                                       <li>
+                                          <big>5</big> <br />
+                                          <span>Order placed</span>
+                                          <hr class="report-breaker" />
+                                       </li>
+                                       <li>
+                                          <big>4</big> <br />
+                                          <span>items purchased</span>
+                                          <hr class="report-breaker" />
+                                       </li>
+                                       <li>
+                                          <big>Rs. 0</big> <br />
+                                          <span>Charged for shipping</span>
+                                          <hr class="report-breaker" />
+                                       </li>
+                                       <li>
+                                          <big>Rs. 0</big> <br />
+                                          <span>Worth of coupons used</span>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div
+                                    class="col-md-9 mt-4 mt-md-0 pr-0 order-right"
+                                 >
+                                    <div class="card card-chart">
+                                       <div class="card-header">
+                                          <h5 class="card-title">Sales</h5>
+                                       </div>
+                                       <div class="card-body">
+                                          <canvas
+                                             id="myChart2"
+                                             aria-label="chart"
+                                             role="img"
+                                          ></canvas>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
                            </div>
                            <div
                               class="tab-pane fade"
@@ -660,7 +758,37 @@
                               role="tabpanel"
                               aria-labelledby="contact-tab"
                            >
-                              top seller here....
+                              <div class="input-group my-3">
+                                 <div class="input-group-prepend">
+                                    <div class="input-group-text">From</div>
+                                 </div>
+                                 <input type="date" class="form-control mr-2" />
+
+                                 <div class="input-group-prepend ml-2">
+                                    <div class="input-group-text">To</div>
+                                 </div>
+                                 <input type="date" class="form-control" />
+                              </div>
+                              <div class="table-responsive">
+                                 <table
+                                    class="table table-striped"
+                                    id="topsellers"
+                                    width="100%"
+                                 >
+                                    <tr>
+                                       <th>Products</th>
+                                       <th>Sales</th>
+                                    </tr>
+                                    <tr>
+                                       <td>Mega Store</td>
+                                       <td>45</td>
+                                    </tr>
+                                    <tr>
+                                       <td>Extra Store</td>
+                                       <td>34</td>
+                                    </tr>
+                                 </table>
+                              </div>
                            </div>
                            <div
                               class="tab-pane fade"
@@ -668,7 +796,45 @@
                               role="tabpanel"
                               aria-labelledby="contact-tab"
                            >
-                              top earner here....
+                              <div class="input-group my-3">
+                                 <div class="input-group-prepend">
+                                    <div class="input-group-text">From</div>
+                                 </div>
+                                 <input type="date" class="form-control mr-2" />
+
+                                 <div class="input-group-prepend ml-2">
+                                    <div class="input-group-text">To</div>
+                                 </div>
+                                 <input type="date" class="form-control" />
+                              </div>
+                              <div class="table-responsive">
+                                 <table
+                                    class="table table-striped"
+                                    id="topsellers"
+                                    width="100%"
+                                 >
+                                    <tr>
+                                       <th>Products</th>
+                                       <th>Sales</th>
+                                    </tr>
+                                    <tr>
+                                       <td>Mega Store</td>
+                                       <td>Rs. 38000</td>
+                                    </tr>
+                                    <tr>
+                                       <td>Extra Store</td>
+                                       <td>Rs. 35000</td>
+                                    </tr>
+                                    <tr>
+                                       <td>Mega Store</td>
+                                       <td>Rs. 38000</td>
+                                    </tr>
+                                    <tr>
+                                       <td>Extra Store</td>
+                                       <td>Rs. 35000</td>
+                                    </tr>
+                                 </table>
+                              </div>
                            </div>
                         </div>
                      </div>
@@ -942,6 +1108,64 @@
          type="text/javascript"
          src="https://cdn.datatables.net/v/bs4/dt-1.10.23/datatables.min.js"
       ></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+      <script>
+         var lineChart = document.getElementById("myChart").getContext("2d");
+         var myLineChart = new Chart(lineChart, {
+            type: "line",
+            data: {
+               labels: [
+                  "2020-02-15",
+                  "2020-02-16",
+                  "2020-02-17",
+                  "2020-02-18",
+                  "2020-02-19",
+                  "2020-02-20",
+               ],
+               datasets: [
+                  {
+                     data: [35, 5, 112, 9, 1, 0],
+                     backgroundColor: "rgba(165, 42, 42, 0.5)",
+                     label: "Number of item sold",
+                  },
+                  {
+                     data: [15, 35, 12, 4, 81, 10],
+                     backgroundColor: "rgba(0, 128, 0, 0.5)",
+                     label: "Number of orders",
+                  },
+               ],
+            },
+         });
+      </script>
+      <!-- Sales by day -->
+      <script>
+         var lineChart = document.getElementById("myChart2").getContext("2d");
+         var myLineChart = new Chart(lineChart, {
+            type: "line",
+            data: {
+               labels: [
+                  "2020-02-15",
+                  "2020-02-16",
+                  "2020-02-17",
+                  "2020-02-18",
+                  "2020-02-19",
+                  "2020-02-20",
+               ],
+               datasets: [
+                  {
+                     data: [25, 15, 102, 9, 1, 10],
+                     backgroundColor: "rgba(165, 42, 42, 0.5)",
+                     label: "Number of item sold",
+                  },
+                  {
+                     data: [15, 35, 12, 4, 81, 10],
+                     backgroundColor: "rgba(0, 128, 0, 0.5)",
+                     label: "Number of orders",
+                  },
+               ],
+            },
+         });
+      </script>
       <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
       <script src="./js/owl.carousel.min.js"></script>
       <script src="./js/jquery.matchHeight-min.js"></script>

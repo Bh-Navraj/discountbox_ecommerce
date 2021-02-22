@@ -20,7 +20,6 @@
 
       <title>DiscountBox: True global online store</title>
    </head>
-
    <body>
       <header id="site-header">
          <div class="header-top">
@@ -499,7 +498,7 @@
                   <div class="sidebar-wrapper dashboard-sidebar">
                      <nav class="sidebar-menu dashboard-menu">
                         <ul>
-                           <li class="active">
+                           <li>
                               <a href="vendor-dashboard.html">
                                  <img src="images/icons/dashboard.svg" alt="" />
                                  Dashboard
@@ -538,7 +537,7 @@
                                  Reports
                               </a>
                            </li>
-                           <li>
+                           <li class="active">
                               <a href="reviews.html">
                                  <img
                                     src="images/icons/dashboard-review.svg"
@@ -561,165 +560,170 @@
                   </div>
                </aside>
                <div class="col-lg-9 col-md-8 col-sm-12">
-                  <div class="row">
-                     <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                        <div class="card">
-                           <div
-                              class="card-body d-flex justify-content-between"
-                           >
-                              <div>
-                                 <h2 class="card-title">Orders</h2>
-                                 <p class="display-5 mb-0">15</p>
-                              </div>
-                              <div class="card-body__right">
-                                 <img
-                                    src="./images/icons/dashboard-orders.svg"
-                                    alt=""
-                                 />
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                        <div class="card">
-                           <div
-                              class="card-body d-flex justify-content-between"
-                           >
-                              <div>
-                                 <h2 class="card-title">Sales</h2>
-                                 <p class="display-5 mb-0">Rs.159</p>
-                              </div>
-                              <div class="card-body__right">
-                                 <img
-                                    src="./images/icons/dashboard-sales.svg"
-                                    alt=""
-                                 />
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                        <div class="card">
-                           <div
-                              class="card-body d-flex justify-content-between"
-                           >
-                              <div>
-                                 <h2 class="card-title">Revenue</h2>
-                                 <p class="display-5 mb-0">Rs.15670</p>
-                              </div>
-                              <div class="card-body__right">
-                                 <img
-                                    src="./images/icons/dashboard-revenues.svg"
-                                    alt=""
-                                 />
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                        <div class="card">
-                           <div
-                              class="card-body d-flex justify-content-between"
-                           >
-                              <div>
-                                 <h2 class="card-title">Stocks</h2>
-                                 <p class="display-5 mb-0">250</p>
-                              </div>
-                              <div class="card-body__right">
-                                 <img
-                                    src="./images/icons/dashboard-stocks.svg"
-                                    alt=""
-                                 />
-                              </div>
-                           </div>
-                        </div>
+                  <div
+                     class="product-state d-flex justify-content-between mb-3"
+                  >
+                     <div>
+                        <span>
+                           <small><a href="#">All(25)</a></small>
+                        </span>
+                        <span>
+                           <small><a href="#">Pending(15)</a></small>
+                        </span>
+                        <span>
+                           <small><a href="#">Spam(5)</a></small>
+                        </span>
+                        <span>
+                           <small><a href="#">Trash(0)</a></small>
+                        </span>
                      </div>
                   </div>
-                  <div class="row">
-                     <div class="col-md-4">
-                        <div class="card">
-                           <div class="card-header">
-                              <h5 class="card-title">Orders</h5>
-                           </div>
-                           <div class="card-body">
-                              <canvas
-                                 id="myPieChart"
-                                 aria-label="chart"
-                                 role="img"
-                                 width="600"
-                                 height="600"
-                              ></canvas>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-8">
-                        <div class="card card-chart">
-                           <div class="card-header">
-                              <h5 class="card-title">Sales</h5>
-                           </div>
-                           <div class="card-body">
-                              <canvas
-                                 id="myChart"
-                                 aria-label="chart"
-                                 role="img"
-                              ></canvas>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="row my-4">
-                     <div class="col-md-4">
-                        <div class="card">
-                           <div class="card-header">
-                              <h5 class="card-title">Reviews</h5>
-                           </div>
-                           <div class="card-body">
-                              <div class="d-flex justify-content-between">
-                                 <div><a href="#">All</a></div>
-                                 <div><span>10</span></div>
+                  <div class="table-responsive review__table">
+                     <table class="table table-striped">
+                        <tr>
+                           <th>
+                              <input type="checkbox" />
+                           </th>
+                           <th>Author</th>
+                           <th class="review__table__comment">Comment</th>
+                           <th class="review__linkto">Link To</th>
+                           <th class="review__rating">Rating</th>
+                        </tr>
+                        <tr>
+                           <td>
+                              <input type="checkbox" />
+                           </td>
+                           <td>
+                              <div class="review__author">
+                                 <img
+                                    src="./images/review/1.jpg"
+                                    alt=""
+                                 /><br />
+                                 <span>Name Here</span> <br />
+                                 <span>emailhere@test.com</span>
                               </div>
-                              <div class="d-flex justify-content-between">
-                                 <div><a href="#">Pending</a></div>
-                                 <div><span>0</span></div>
+                           </td>
+                           <td>
+                              <div class="review__comment">
+                                 <span>
+                                    <small>
+                                       Submitted on 2021/02/15 at 12:47 pm
+                                    </small>
+                                 </span>
+                                 <p>
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Dolorem facilis quis odio,
+                                    beatae.
+                                 </p>
+                                 <div class="review__comment__hover">
+                                    <span><a href="#">Unapprove</a></span> |
+                                    <span><a href="#">Quick Edit</a></span> |
+                                    <span><a href="#">Spam</a></span> |
+                                    <span><a href="#">Trash</a></span>
+                                 </div>
                               </div>
-                              <div class="d-flex justify-content-between">
-                                 <div><a href="#">Spam</a></div>
-                                 <div><span>5</span></div>
+                           </td>
+                           <td>
+                              <a href="#">View Comment</a>
+                           </td>
+                           <td>
+                              <img src="./images/icons/star.svg" alt="" />
+                              <img src="./images/icons/star.svg" alt="" />
+                              <img src="./images/icons/star.svg" alt="" />
+                              <img src="./images/icons/star.svg" alt="" />
+                              <img src="./images/icons/star.svg" alt="" />
+                           </td>
+                        </tr>
+
+                        <tr>
+                           <td>
+                              <input type="checkbox" />
+                           </td>
+                           <td>
+                              <div class="review__author">
+                                 <img
+                                    src="./images/review/2.jpg"
+                                    alt=""
+                                 /><br />
+                                 <span>Name Here</span> <br />
+                                 <span>emailhere@test.com</span>
                               </div>
-                              <div class="d-flex justify-content-between">
-                                 <div><a href="#">Trash</a></div>
-                                 <div><span>1</span></div>
+                           </td>
+                           <td>
+                              <div class="review__comment">
+                                 <span>
+                                    <small>
+                                       Submitted on 2021/02/15 at 12:47 pm
+                                    </small>
+                                 </span>
+                                 <p>
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Dolorem facilis quis odio,
+                                    beatae.
+                                 </p>
+                                 <div class="review__comment__hover">
+                                    <span><a href="#">Unapprove</a></span> |
+                                    <span><a href="#">Quick Edit</a></span> |
+                                    <span><a href="#">Spam</a></span> |
+                                    <span><a href="#">Trash</a></span>
+                                 </div>
                               </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-8">
-                        <div class="card">
-                           <div
-                              class="card-header d-flex justify-content-between"
-                           >
-                              <h5 class="card-title">Products</h5>
-                           </div>
-                           <div class="card-body">
-                              <div class="d-flex justify-content-between">
-                                 <div><a href="#">Total</a></div>
-                                 <div><span>125</span></div>
+                           </td>
+                           <td>
+                              <a href="#">View Comment</a>
+                           </td>
+                           <td>
+                              <img src="./images/icons/star.svg" alt="" />
+                              <img src="./images/icons/star.svg" alt="" />
+                              <img src="./images/icons/star.svg" alt="" />
+                              <img src="./images/icons/star.svg" alt="" />
+                           </td>
+                        </tr>
+
+                        <tr>
+                           <td>
+                              <input type="checkbox" />
+                           </td>
+                           <td>
+                              <div class="review__author">
+                                 <img
+                                    src="./images/review/3.jpg"
+                                    alt=""
+                                 /><br />
+                                 <span>Name Here</span> <br />
+                                 <span>emailhere@test.com</span>
                               </div>
-                              <div class="d-flex justify-content-between">
-                                 <div><a href="#">Live</a></div>
-                                 <div><span>124</span></div>
+                           </td>
+                           <td>
+                              <div class="review__comment">
+                                 <span>
+                                    <small>
+                                       Submitted on 2021/02/15 at 12:47 pm
+                                    </small>
+                                 </span>
+                                 <p>
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Dolorem facilis quis odio,
+                                    beatae.
+                                 </p>
+                                 <div class="review__comment__hover">
+                                    <span><a href="#">Unapprove</a></span> |
+                                    <span><a href="#">Quick Edit</a></span> |
+                                    <span><a href="#">Spam</a></span> |
+                                    <span><a href="#">Trash</a></span>
+                                 </div>
                               </div>
-                              <div class="d-flex justify-content-between">
-                                 <div><a href="#">Offline</a></div>
-                                 <div><span>11</span></div>
-                              </div>
-                              <div class="d-flex justify-content-between">
-                                 <div><a href="#">Pending Review</a></div>
-                                 <div><span>5</span></div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+                           </td>
+                           <td>
+                              <a href="#">View Comment</a>
+                           </td>
+                           <td>
+                              <img src="./images/icons/star.svg" alt="" />
+                              <img src="./images/icons/star.svg" alt="" />
+                              <img src="./images/icons/star.svg" alt="" />
+                           </td>
+                        </tr>
+                     </table>
                   </div>
                </div>
             </div>
@@ -960,7 +964,7 @@
                                  src="images/whitestroke.png"
                                  alt="whitestroke"
                                  width="
-                                40"
+                                 40"
                               />
                            </a>
                         </p>
@@ -982,63 +986,6 @@
       <script>
          $("#hotDeal").countdown("2021/3/1", function (event) {
             $(this).html(event.strftime("" + "%D days %H H : %M M : %S S"));
-         });
-      </script>
-      <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-      <script>
-         var pie = document.getElementById("myPieChart").getContext("2d");
-         var myDoughnutChart = new Chart(pie, {
-            type: "doughnut",
-            data: {
-               labels: [
-                  "Completed",
-                  "Pending",
-                  "Processing",
-                  "Cancelled",
-                  "Refunded",
-                  "On hold",
-               ],
-               datasets: [
-                  {
-                     data: [35, 5, 2, 9, 1, 0],
-                     backgroundColor: [
-                        "green",
-                        "gray",
-                        "brown",
-                        "red",
-                        "black",
-                        "blue",
-                     ],
-                  },
-               ],
-            },
-         });
-
-         var lineChart = document.getElementById("myChart").getContext("2d");
-         var myLineChart = new Chart(lineChart, {
-            type: "line",
-            data: {
-               labels: [
-                  "2020-02-15",
-                  "2020-02-16",
-                  "2020-02-17",
-                  "2020-02-18",
-                  "2020-02-19",
-                  "2020-02-20",
-               ],
-               datasets: [
-                  {
-                     data: [35, 5, 112, 9, 1, 0],
-                     backgroundColor: "rgba(165, 42, 42, 0.5)",
-                     label: "Number of item sold",
-                  },
-                  {
-                     data: [15, 35, 12, 4, 81, 10],
-                     backgroundColor: "rgba(0, 128, 0, 0.5)",
-                     label: "Number of orders",
-                  },
-               ],
-            },
          });
       </script>
       <script src="./js/owl.carousel.min.js"></script>
