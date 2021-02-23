@@ -2633,6 +2633,7 @@ span .product-size input[type="checkbox"]:checked + label span {
 
 .table-col-right {
    text-align: left;
+   width: 70%;
 }
 
 /* report page css started */
