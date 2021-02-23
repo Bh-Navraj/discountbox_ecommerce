@@ -2677,3 +2677,8 @@ span .product-size input[type="checkbox"]:checked + label span {
 .review__comment:hover .review__comment__hover {
    display: block;
 }
+
+/* coupon page css started */
+.coupon_modify span a.badge-warning {
+   color: white;
+}
