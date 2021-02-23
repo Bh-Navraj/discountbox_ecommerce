@@ -2568,6 +2568,10 @@ span .product-size input[type="checkbox"]:checked + label span {
    padding-right: 10px;
 }
 
+.card-body.seperator {
+   padding-top: 5px !important;
+}
+
 .card-body__right {
    display: flex;
    align-self: center;
@@ -2575,7 +2579,11 @@ span .product-size input[type="checkbox"]:checked + label span {
 
 .card-body__right img {
    height: 40px;
-   /* margin-top: 10px; */
+}
+
+.seperator > div {
+   padding: 5px 0;
+   border-bottom: 1px solid rgb(223, 223, 223);
 }
 
 .card-title {
