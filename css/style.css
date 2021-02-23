@@ -2568,6 +2568,10 @@ span .product-size input[type="checkbox"]:checked + label span {
    padding-right: 10px;
 }
 
+.card-body.seperator {
+   padding-top: 5px !important;
+}
+
 .card-body__right {
    display: flex;
    align-self: center;
@@ -2575,7 +2579,11 @@ span .product-size input[type="checkbox"]:checked + label span {
 
 .card-body__right img {
    height: 40px;
-   /* margin-top: 10px; */
+}
+
+.seperator > div {
+   padding: 5px 0;
+   border-bottom: 1px solid rgb(223, 223, 223);
 }
 
 .card-title {
@@ -2625,6 +2633,7 @@ span .product-size input[type="checkbox"]:checked + label span {
 
 .table-col-right {
    text-align: left;
+   width: 70%;
 }
 
 /* report page css started */
@@ -2663,9 +2672,23 @@ span .product-size input[type="checkbox"]:checked + label span {
 }
 
 .review__comment__hover {
-   display: none;
+   visibility: hidden;
 }
 
 .review__comment:hover .review__comment__hover {
-   display: block;
+   visibility: visible;
+}
+
+.review__rating i {
+   display: inline-block;
+   margin: 8px 2px;
+   font-size: 16px;
+   color: #f3bd0c;
+}
+
+/* coupon page css started */
+.coupon_modify span a.badge-warning,
+.product-action a.badge-warning,
+.review__comment__hover span a.badge-warning {
+   color: white;
 }

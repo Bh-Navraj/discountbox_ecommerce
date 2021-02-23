@@ -12,17 +12,6 @@
          rel="stylesheet"
       />
 
-      <!-- dataTable -->
-      <link
-         rel="stylesheet"
-         type="text/css"
-         href="https://cdn.datatables.net/v/bs4/dt-1.10.23/datatables.min.css"
-      />
-      <link
-         rel="stylesheet"
-         href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css"
-      />
-
       <!-- CSS Files -->
       <link rel="stylesheet" href="css/bootstrap.min.css" />
       <link rel="stylesheet" href="css/fontawesome-all.min.css" />
@@ -515,7 +504,7 @@
                                  Dashboard
                               </a>
                            </li>
-                           <li class="active">
+                           <li>
                               <a href="products.html">
                                  <img src="images/icons/products.svg" alt="" />
                                  Products
@@ -557,7 +546,7 @@
                                  Reviews
                               </a>
                            </li>
-                           <li>
+                           <li class="active">
                               <a href="settings.html">
                                  <img
                                     src="images/icons/dashboard-settings.svg"
@@ -571,560 +560,209 @@
                   </div>
                </aside>
                <div class="col-lg-9 col-md-8 col-sm-12">
-                  <div
-                     class="product-state d-flex justify-content-between mb-3"
-                  >
-                     <div>
-                        <span
-                           ><small><a href="#">All(25)</a></small></span
-                        >
-                        <span
-                           ><small><a href="#">Online(15)</a></small></span
-                        >
-                        <span
-                           ><small
-                              ><a href="#">Pending Review(5)</a></small
-                           ></span
-                        >
-                        <span
-                           ><small><a href="#">Drafts(0)</a></small></span
-                        >
-                     </div>
-                     <div>
-                        <a href="#" class="btn btn-all btn-md">
-                           <i class="fas fa-plus" style="margin-left: 0"></i>
-                           Add Product
-                        </a>
-                     </div>
-                  </div>
-                  <div class="product-table table-responsive">
-                     <table
-                        class="table table-striped"
-                        id="products"
-                        width="100%"
-                     >
-                        <thead>
-                           <th>Image</th>
-                           <th>Name</th>
-                           <th>Status</th>
-                           <th>SKU</th>
-                           <th>Stock</th>
-                           <th>Price</th>
-                           <th>Views</th>
-                           <th>Date</th>
-                        </thead>
-                        <tbody>
-                           <tr>
-                              <td>
-                                 <img src="./images/1.jpg" alt="image here" />
-                              </td>
-                              <td class="product-name">
-                                 Tshirt <br />
-                                 <span class="product-action">
-                                    <a
-                                       href="product-edit.html"
-                                       class="badge badge-warning"
+                  <div class="table-responsive my-3">
+                     <table class="product-options-table">
+                        <tr>
+                           <td class="table-col-left">
+                              <label for="store__name" style="width: 140px">
+                                 Store Name
+                              </label>
+                           </td>
+                           <td class="table-col-right">
+                              <input
+                                 id="store__name"
+                                 class="form-control"
+                                 type="text"
+                              />
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="table-col-left">
+                              <label for="social__profile">
+                                 Social Profile
+                              </label>
+                           </td>
+                           <td class="table-col-right">
+                              <div class="input-group mb-3">
+                                 <div class="input-group-prepend">
+                                    <span
+                                       class="input-group-text"
+                                       id="basic-addon1"
                                     >
-                                       Edit
-                                    </a>
-                                 </span>
-                                 <span class="product-action">
-                                    <a href="#" class="badge badge-danger">
-                                       Delete
-                                    </a>
-                                 </span>
-                                 <span class="product-action">
-                                    <a href="#" class="badge badge-info">
-                                       Update
-                                    </a>
-                                 </span>
-                              </td>
-                              <td>
-                                 <span class="badge badge-success">Online</span>
-                              </td>
-                              <td>-</td>
-                              <td>18</td>
-                              <td>Rs. 555</td>
-                              <td>260</td>
-                              <td>2021/02/14</td>
-                           </tr>
-                           <tr>
-                              <td>
-                                 <img src="./images/2.jpg" alt="image here" />
-                              </td>
-                              <td class="product-name">
-                                 Pant <br />
-                                 <span class="product-action">
-                                    <a
-                                       href="product-edit.html"
-                                       class="badge badge-warning"
+                                       <img
+                                          src="./images/icons/facebook.svg"
+                                          alt=""
+                                       />
+                                    </span>
+                                 </div>
+                                 <input
+                                    type="text"
+                                    class="form-control"
+                                    aria-label="facebook"
+                                    aria-describedby="basic-addon1"
+                                 />
+                              </div>
+
+                              <div class="input-group mb-3">
+                                 <div class="input-group-prepend">
+                                    <span
+                                       class="input-group-text"
+                                       id="basic-addon1"
                                     >
-                                       Edit
-                                    </a>
-                                 </span>
-                                 <span class="product-action">
-                                    <a href="#" class="badge badge-danger">
-                                       Delete
-                                    </a>
-                                 </span>
-                                 <span class="product-action">
-                                    <a href="#" class="badge badge-info">
-                                       Update
-                                    </a>
-                                 </span>
-                              </td>
-                              <td>
-                                 <span class="badge badge-success">Online</span>
-                              </td>
-                              <td>-</td>
-                              <td>19</td>
-                              <td>Rs. 5055</td>
-                              <td>2600</td>
-                              <td>2021/02/19</td>
-                           </tr>
-                           <tr>
-                              <td>
-                                 <img src="./images/3.jpg" alt="image here" />
-                              </td>
-                              <td class="product-name">
-                                 Tshirt <br />
-                                 <span class="product-action">
-                                    <a
-                                       href="product-edit.html"
-                                       class="badge badge-warning"
+                                       <img
+                                          src="./images/icons/instagram.svg"
+                                          alt=""
+                                       />
+                                    </span>
+                                 </div>
+                                 <input
+                                    type="text"
+                                    class="form-control"
+                                    aria-label="instagram"
+                                    aria-describedby="basic-addon2"
+                                 />
+                              </div>
+
+                              <div class="input-group mb-3">
+                                 <div class="input-group-prepend">
+                                    <span
+                                       class="input-group-text"
+                                       id="basic-addon1"
                                     >
-                                       Edit
-                                    </a>
-                                 </span>
-                                 <span class="product-action">
-                                    <a href="#" class="badge badge-danger">
-                                       Delete
-                                    </a>
-                                 </span>
-                                 <span class="product-action">
-                                    <a href="#" class="badge badge-info">
-                                       Update
-                                    </a>
-                                 </span>
-                              </td>
-                              <td>
-                                 <span class="badge badge-success">Online</span>
-                              </td>
-                              <td>-</td>
-                              <td>195</td>
-                              <td>Rs. 5515</td>
-                              <td>360</td>
-                              <td>2021/02/17</td>
-                           </tr>
-                           <tr>
-                              <td>
-                                 <img src="./images/4.jpg" alt="image here" />
-                              </td>
-                              <td class="product-name">
-                                 Vest <br />
-                                 <span class="product-action">
+                                       <img
+                                          src="./images/icons/twitter.svg"
+                                          alt=""
+                                       />
+                                    </span>
+                                 </div>
+                                 <input
+                                    type="text"
+                                    class="form-control"
+                                    aria-label="Twitter"
+                                    aria-describedby="basic-addon3"
+                                 />
+                              </div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="table-col-left">
+                              <label for="product-qty" style="width: 140px">
+                                 Payment Method
+                              </label>
+                           </td>
+                           <td class="table-col-right">
+                              <ul
+                                 class="nav nav-tabs"
+                                 id="myTab"
+                                 role="tablist"
+                              >
+                                 <li class="nav-item">
                                     <a
-                                       href="product-edit.html"
-                                       class="badge badge-warning"
+                                       class="nav-link active"
+                                       id="home-tab"
+                                       data-toggle="tab"
+                                       href="#tab__esewa"
+                                       role="tab"
+                                       aria-controls="home"
+                                       aria-selected="true"
+                                       >Esewa</a
                                     >
-                                       Edit
-                                    </a>
-                                 </span>
-                                 <span class="product-action">
-                                    <a href="#" class="badge badge-danger">
-                                       Delete
-                                    </a>
-                                 </span>
-                                 <span class="product-action">
-                                    <a href="#" class="badge badge-info">
-                                       Update
-                                    </a>
-                                 </span>
-                              </td>
-                              <td>
-                                 <span class="badge badge-success">Online</span>
-                              </td>
-                              <td>-</td>
-                              <td>5</td>
-                              <td>Rs. 4555</td>
-                              <td>5260</td>
-                              <td>2021/02/14</td>
-                           </tr>
-                           <tr>
-                              <td>
-                                 <img src="./images/5.jpg" alt="image here" />
-                              </td>
-                              <td class="product-name">
-                                 Gloves <br />
-                                 <span class="product-action">
+                                 </li>
+                                 <li class="nav-item">
                                     <a
-                                       href="product-edit.html"
-                                       class="badge badge-warning"
+                                       class="nav-link"
+                                       id="profile-tab"
+                                       data-toggle="tab"
+                                       href="#tab__bank"
+                                       role="tab"
+                                       aria-controls="profile"
+                                       aria-selected="false"
+                                       >Bank Transfer</a
                                     >
-                                       Edit
-                                    </a>
-                                 </span>
-                                 <span class="product-action">
-                                    <a href="#" class="badge badge-danger">
-                                       Delete
-                                    </a>
-                                 </span>
-                                 <span class="product-action">
-                                    <a href="#" class="badge badge-info">
-                                       Update
-                                    </a>
-                                 </span>
-                              </td>
-                              <td>
-                                 <span class="badge badge-success">Online</span>
-                              </td>
-                              <td>-</td>
-                              <td>18</td>
-                              <td>Rs. 57855</td>
-                              <td>20</td>
-                              <td>2021/02/15</td>
-                           </tr>
-                           <tr>
-                              <td>
-                                 <img src="./images/1.jpg" alt="image here" />
-                              </td>
-                              <td class="product-name">
-                                 Tshirt <br />
-                                 <span class="product-action">
-                                    <a
-                                       href="product-edit.html"
-                                       class="badge badge-warning"
-                                    >
-                                       Edit
-                                    </a>
-                                 </span>
-                                 <span class="product-action">
-                                    <a href="#" class="badge badge-danger">
-                                       Delete
-                                    </a>
-                                 </span>
-                                 <span class="product-action">
-                                    <a href="#" class="badge badge-info">
-                                       Update
-                                    </a>
-                                 </span>
-                              </td>
-                              <td>
-                                 <span class="badge badge-success">Online</span>
-                              </td>
-                              <td>-</td>
-                              <td>17</td>
-                              <td>Rs. 54655</td>
-                              <td>3260</td>
-                              <td>2021/02/14</td>
-                           </tr>
-                           <tr>
-                              <td>
-                                 <img src="./images/2.jpg" alt="image here" />
-                              </td>
-                              <td class="product-name">
-                                 Pant <br />
-                                 <span class="product-action">
-                                    <a
-                                       href="product-edit.html"
-                                       class="badge badge-warning"
-                                    >
-                                       Edit
-                                    </a>
-                                 </span>
-                                 <span class="product-action">
-                                    <a href="#" class="badge badge-danger">
-                                       Delete
-                                    </a>
-                                 </span>
-                                 <span class="product-action">
-                                    <a href="#" class="badge badge-info">
-                                       Update
-                                    </a>
-                                 </span>
-                              </td>
-                              <td>
-                                 <span class="badge badge-success">Online</span>
-                              </td>
-                              <td>-</td>
-                              <td>18</td>
-                              <td>Rs. 47555</td>
-                              <td>960</td>
-                              <td>2021/02/14</td>
-                           </tr>
-                           <tr>
-                              <td>
-                                 <img src="./images/3.jpg" alt="image here" />
-                              </td>
-                              <td class="product-name">
-                                 Tshirt <br />
-                                 <span class="product-action">
-                                    <a
-                                       href="product-edit.html"
-                                       class="badge badge-warning"
-                                    >
-                                       Edit
-                                    </a>
-                                 </span>
-                                 <span class="product-action">
-                                    <a href="#" class="badge badge-danger">
-                                       Delete
-                                    </a>
-                                 </span>
-                                 <span class="product-action">
-                                    <a href="#" class="badge badge-info">
-                                       Update
-                                    </a>
-                                 </span>
-                              </td>
-                              <td>
-                                 <span class="badge badge-success">Online</span>
-                              </td>
-                              <td>-</td>
-                              <td>18</td>
-                              <td>Rs. 555</td>
-                              <td>260</td>
-                              <td>2021/02/14</td>
-                           </tr>
-                           <tr>
-                              <td>
-                                 <img src="./images/4.jpg" alt="image here" />
-                              </td>
-                              <td class="product-name">
-                                 Vest <br />
-                                 <span class="product-action">
-                                    <a
-                                       href="product-edit.html"
-                                       class="badge badge-warning"
-                                    >
-                                       Edit
-                                    </a>
-                                 </span>
-                                 <span class="product-action">
-                                    <a href="#" class="badge badge-danger">
-                                       Delete
-                                    </a>
-                                 </span>
-                                 <span class="product-action">
-                                    <a href="#" class="badge badge-info">
-                                       Update
-                                    </a>
-                                 </span>
-                              </td>
-                              <td>
-                                 <span class="badge badge-success">Online</span>
-                              </td>
-                              <td>-</td>
-                              <td>18</td>
-                              <td>Rs. 555</td>
-                              <td>260</td>
-                              <td>2021/02/14</td>
-                           </tr>
-                           <tr>
-                              <td>
-                                 <img src="./images/5.jpg" alt="image here" />
-                              </td>
-                              <td class="product-name">
-                                 Gloves <br />
-                                 <span class="product-action">
-                                    <a
-                                       href="product-edit.html"
-                                       class="badge badge-warning"
-                                    >
-                                       Edit
-                                    </a>
-                                 </span>
-                                 <span class="product-action">
-                                    <a href="#" class="badge badge-danger">
-                                       Delete
-                                    </a>
-                                 </span>
-                                 <span class="product-action">
-                                    <a href="#" class="badge badge-info">
-                                       Update
-                                    </a>
-                                 </span>
-                              </td>
-                              <td>
-                                 <span class="badge badge-success">Online</span>
-                              </td>
-                              <td>-</td>
-                              <td>18</td>
-                              <td>Rs. 555</td>
-                              <td>260</td>
-                              <td>2021/02/14</td>
-                           </tr>
-                           <tr>
-                              <td>
-                                 <img src="./images/6.jpg" alt="image here" />
-                              </td>
-                              <td class="product-name">
-                                 Tshirt <br />
-                                 <span class="product-action">
-                                    <a
-                                       href="product-edit.html"
-                                       class="badge badge-warning"
-                                    >
-                                       Edit
-                                    </a>
-                                 </span>
-                                 <span class="product-action">
-                                    <a href="#" class="badge badge-danger">
-                                       Delete
-                                    </a>
-                                 </span>
-                                 <span class="product-action">
-                                    <a href="#" class="badge badge-info">
-                                       Update
-                                    </a>
-                                 </span>
-                              </td>
-                              <td>
-                                 <span class="badge badge-success">Online</span>
-                              </td>
-                              <td>-</td>
-                              <td>18</td>
-                              <td>Rs. 555</td>
-                              <td>260</td>
-                              <td>2021/02/14</td>
-                           </tr>
-                           <tr>
-                              <td>
-                                 <img src="./images/7.jpg" alt="image here" />
-                              </td>
-                              <td class="product-name">
-                                 Pant <br />
-                                 <span class="product-action">
-                                    <a
-                                       href="product-edit.html"
-                                       class="badge badge-warning"
-                                    >
-                                       Edit
-                                    </a>
-                                 </span>
-                                 <span class="product-action">
-                                    <a href="#" class="badge badge-danger">
-                                       Delete
-                                    </a>
-                                 </span>
-                                 <span class="product-action">
-                                    <a href="#" class="badge badge-info">
-                                       Update
-                                    </a>
-                                 </span>
-                              </td>
-                              <td>
-                                 <span class="badge badge-success">Online</span>
-                              </td>
-                              <td>-</td>
-                              <td>18</td>
-                              <td>Rs. 555</td>
-                              <td>260</td>
-                              <td>2021/02/14</td>
-                           </tr>
-                           <tr>
-                              <td>
-                                 <img src="./images/1.jpg" alt="image here" />
-                              </td>
-                              <td class="product-name">
-                                 Tshirt <br />
-                                 <span class="product-action">
-                                    <a
-                                       href="product-edit.html"
-                                       class="badge badge-warning"
-                                    >
-                                       Edit
-                                    </a>
-                                 </span>
-                                 <span class="product-action">
-                                    <a href="#" class="badge badge-danger">
-                                       Delete
-                                    </a>
-                                 </span>
-                                 <span class="product-action">
-                                    <a href="#" class="badge badge-info">
-                                       Update
-                                    </a>
-                                 </span>
-                              </td>
-                              <td>
-                                 <span class="badge badge-success">Online</span>
-                              </td>
-                              <td>-</td>
-                              <td>18</td>
-                              <td>Rs. 555</td>
-                              <td>260</td>
-                              <td>2021/02/14</td>
-                           </tr>
-                           <tr>
-                              <td>
-                                 <img src="./images/1.jpg" alt="image here" />
-                              </td>
-                              <td class="product-name">
-                                 Vest <br />
-                                 <span class="product-action">
-                                    <a
-                                       href="product-edit.html"
-                                       class="badge badge-warning"
-                                    >
-                                       Edit
-                                    </a>
-                                 </span>
-                                 <span class="product-action">
-                                    <a href="#" class="badge badge-danger">
-                                       Delete
-                                    </a>
-                                 </span>
-                                 <span class="product-action">
-                                    <a href="#" class="badge badge-info">
-                                       Update
-                                    </a>
-                                 </span>
-                              </td>
-                              <td>
-                                 <span class="badge badge-success">Online</span>
-                              </td>
-                              <td>-</td>
-                              <td>18</td>
-                              <td>Rs. 555</td>
-                              <td>260</td>
-                              <td>2021/02/14</td>
-                           </tr>
-                           <tr>
-                              <td>
-                                 <img src="./images/1.jpg" alt="image here" />
-                              </td>
-                              <td class="product-name">
-                                 Gloves <br />
-                                 <span class="product-action">
-                                    <a
-                                       href="product-edit.html"
-                                       class="badge badge-warning"
-                                    >
-                                       Edit
-                                    </a>
-                                 </span>
-                                 <span class="product-action">
-                                    <a href="#" class="badge badge-danger">
-                                       Delete
-                                    </a>
-                                 </span>
-                                 <span class="product-action">
-                                    <a href="#" class="badge badge-info">
-                                       Update
-                                    </a>
-                                 </span>
-                              </td>
-                              <td>
-                                 <span class="badge badge-success">Online</span>
-                              </td>
-                              <td>-</td>
-                              <td>18</td>
-                              <td>Rs. 555</td>
-                              <td>260</td>
-                              <td>2021/02/14</td>
-                           </tr>
-                        </tbody>
+                                 </li>
+                              </ul>
+                              <div class="tab-content" id="myTabContent">
+                                 <div
+                                    class="tab-pane fade show active"
+                                    id="tab__esewa"
+                                    role="tabpanel"
+                                    aria-labelledby="home-tab"
+                                 >
+                                    <form action="#">
+                                       <div class="input-group my-2">
+                                          <div class="input-group-prepend">
+                                             <div class="input-group-text">
+                                                EsewaId
+                                             </div>
+                                          </div>
+                                          <input
+                                             type="text"
+                                             class="form-control"
+                                             placeholder="+977 98xxxxxxxx"
+                                          />
+                                       </div>
+                                    </form>
+                                 </div>
+                                 <div
+                                    class="tab-pane fade"
+                                    id="tab__bank"
+                                    role="tabpanel"
+                                    aria-labelledby="profile-tab"
+                                 >
+                                    <form action="#">
+                                       <div class="form-group">
+                                          <label for="exampleFormControlInput1"
+                                             >Full Name</label
+                                          >
+                                          <input
+                                             type="text"
+                                             class="form-control"
+                                             id="exampleFormControlInput1"
+                                          />
+                                       </div>
+                                       <div class="form-group">
+                                          <label for="exampleFormControlInput1"
+                                             >Account Number</label
+                                          >
+                                          <input
+                                             type="text"
+                                             class="form-control"
+                                             id="exampleFormControlInput1"
+                                          />
+                                       </div>
+                                       <div class="form-group">
+                                          <label for="exampleFormControlInput1"
+                                             >Branch Address</label
+                                          >
+                                          <input
+                                             type="text"
+                                             class="form-control"
+                                             id="exampleFormControlInput1"
+                                          />
+                                       </div>
+                                       <div class="form-group">
+                                          <label for="exampleFormControlInput1"
+                                             >Phone Number</label
+                                          >
+                                          <input
+                                             type="text"
+                                             class="form-control"
+                                             id="exampleFormControlInput1"
+                                          />
+                                       </div>
+                                    </form>
+                                 </div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>&nbsp;</td>
+                           <td>
+                              <button class="btn btn-all">
+                                 Update Settings
+                              </button>
+                           </td>
+                        </tr>
                      </table>
                   </div>
                </div>
@@ -1366,7 +1004,7 @@
                                  src="images/whitestroke.png"
                                  alt="whitestroke"
                                  width="
-                               40"
+                                 40"
                               />
                            </a>
                         </p>
@@ -1390,13 +1028,6 @@
             $(this).html(event.strftime("" + "%D days %H H : %M M : %S S"));
          });
       </script>
-
-      <!-- dataTable -->
-      <script
-         type="text/javascript"
-         src="https://cdn.datatables.net/v/bs4/dt-1.10.23/datatables.min.js"
-      ></script>
-      <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
       <script src="./js/owl.carousel.min.js"></script>
       <script src="./js/jquery.matchHeight-min.js"></script>
       <script src="./js/script/script.js"></script>
