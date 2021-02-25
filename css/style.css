@@ -1920,6 +1920,11 @@ img {
 	margin: 15px 0 15px 20px;
 }
 
+.filter-content.listing ul,
+.filter-content.listing ol {
+	margin: 0 !important;
+}
+
 .filter-content ul li {
 	margin: 5px 0;
 }
@@ -1934,6 +1939,20 @@ img {
 .filter-content ul.filter-list li label,
 .filter-content ol.filter-list li label {
 	cursor: pointer;
+}
+
+.filter-content.listing .product-size ul li label,
+.filter-content.listing .product-size ol li label{
+	min-width: 50px;
+	height: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.filter-content.listing .product-size ul li label span,
+.filter-content.listing .product-size ol li label span{
+	font-size: 12px;
 }
 
 .filter-content ul.filter-list li label input[type="checkbox"],
@@ -2150,6 +2169,9 @@ span .product-size input[type="checkbox"]:checked + label span {
 	border: 1px solid #dddddd;
 	position: relative;
 	cursor: pointer;
+}
+.filter-content.listing .product-color input[type="radio"] + label{
+	width: 34px;
 }
 .product-color input[type="radio"].red + label,
 .product-color input[type="checkbox"].red + label {
@@ -2628,7 +2650,7 @@ span .product-size input[type="checkbox"]:checked + label span {
 }
 
 .table-col-left {
-	display: flex	;
+	display: flex;
 	text-align: right;
 }
 
