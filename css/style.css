@@ -15,6 +15,11 @@ body {
    font-weight: 400;
 }
 
+.small, small {
+	font-size: 14px;
+	font-weight: 400;
+}
+
 h1,
 h2,
 h3,
@@ -2631,8 +2636,11 @@ span .product-size input[type="checkbox"]:checked + label span {
 	width: 50px;
 }
 
-.product-action a {
+.product-action a{
 	font-size: 12px;
+	background-color: #d02122;
+	color: #ffffff;
+	padding: 5px;
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button .page-link {
@@ -2736,4 +2744,45 @@ span .product-size input[type="checkbox"]:checked + label span {
 	background-color: #000;
 	color: white;
 	margin-left: 1px;
+}
+.upload-img-thumb-wrapper {
+	margin: 10px 0;
+}
+.upload-img-thumb {
+	width: 80px;
+	display: inline-block;
+	position: relative;
+	margin: 5px 10px 5px 0;
+}
+.upload-img-thumb img {
+	width: 80px;
+	height: 80px;
+	border: 1px solid #000000;
+	object-fit: cover;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	position: relative;
+}
+.upload-img-thumb .button-action {
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	background-color: #d02122;
+	color: #ffffff;
+	border: none;
+}
+div.table-responsive>div.dataTables_wrapper>div.row:last-of-type {
+	margin-top: 10px;
+	padding-top: 10px;
+	border-top: 1px solid #dee2e6;
+}
+.review__author img {
+	margin-bottom: 10px;
+}
+.review__author span,
+.review__author strong {
+	display: block;
 }
