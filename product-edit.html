@@ -29,7 +29,6 @@
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/icon?family=Material+Icons"
 		/>
-		<link rel="stylesheet" href="/css/image-uploader.css" />
 		<!-- tiny text editor -->
 		<script
 			src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js"
@@ -837,25 +836,52 @@
 								</ul>
 								<div
 									class="tab-content background-white p-2 bgchange2"
-									id="myTabContent"
-								>
+									id="myTabContent">
 									<div
 										class="tab-pane fade show active"
 										id="edit"
 										role="tabpanel"
-										aria-labelledby="home-tab"
-									>
+										aria-labelledby="home-tab">
 										<div class="my-3">
-											<form action="#">
+											<form action="#" enctype="multipart/form-data">
+
+												<div class="upload-img-thumb-wrapper">
+													<div class="upload-img-thumb">
+														<img src="images/1.jpg" alt="1">
+														<button class="button-action btn-wish btn-sm btn-round d-inline-flex">
+															<i data-feather="x"></i>
+														</button>
+													</div>
+													<div class="upload-img-thumb">
+														<img src="images/2.jpg" alt="1">
+														<button class="button-action btn-wish btn-sm btn-round d-inline-flex">
+															<i data-feather="x"></i>
+														</button>
+													</div>
+													<div class="upload-img-thumb">
+														<img src="images/3.jpg" alt="1">
+														<button class="button-action btn-wish btn-sm btn-round d-inline-flex">
+															<i data-feather="x"></i>
+														</button>
+													</div>
+													<div class="upload-img-thumb">
+														<img src="images/4.jpg" alt="1">
+														<button class="button-action btn-wish btn-sm btn-round d-inline-flex">
+															<i data-feather="x"></i>
+														</button>
+													</div>
+													<div class="upload-img-thumb">
+														<img src="images/5.jpg" alt="1">
+														<button class="button-action btn-wish btn-sm btn-round d-inline-flex">
+															<i data-feather="x"></i>
+														</button>
+													</div>
+												</div>
+
 												<div class="form-group mb-3">
-													<label for="product-image"
-														>Upload Product Image
+													<label for="uploadMulImage">Upload Product Image
 													</label>
-													<input
-														type="file"
-														class=""
-														id="product-image"
-													/>
+													<input id="uploadMulImage" type="file" multiple="multiple">
 												</div>
 
 												<div class="form-group">
@@ -1060,7 +1086,7 @@
 														</label>
 													</td>
 													<td class="table-col-right">
-														<input
+														<input class="form-control"
 															id="product-sku"
 															type="text"
 														/>
@@ -1090,7 +1116,7 @@
 														</label>
 													</td>
 													<td class="table-col-right">
-														<input
+														<input class="form-control"
 															id="product-qty"
 															type="text"
 														/>
@@ -1275,28 +1301,7 @@
 										></a
 									>
 								</span>
-								<hr />
-								<div class="product-image-gallery">
-									<form
-										method="POST"
-										name="form-example-1"
-										id="form-example-1"
-										enctype="multipart/form-data"
-									>
-										<div class="input-field">
-											<label class="active">Photos</label>
-											<div
-												class="input-images"
-												style="padding-top: 0.5rem"
-											></div>
-										</div>
 
-										<input
-											class="btn btn-all bg-success mt-1"
-											type="submit"
-										/>
-									</form>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -1592,7 +1597,7 @@
 		</footer>
 
 		<!-- JS files -->
-		<script src="./js/library/jquery-3.4.1.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script src="./js/bootstrap.bundle.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 		<script>
@@ -1606,20 +1611,13 @@
 		</script>
 
 		<!-- dataTable -->
-		<script
-			type="text/javascript"
-			src="https://cdn.datatables.net/v/bs4/dt-1.10.23/datatables.min.js"
+		<script src="https://cdn.datatables.net/v/bs4/dt-1.10.23/datatables.min.js"
 		></script>
 		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 		<script src="./js/owl.carousel.min.js"></script>
 		<script src="./js/jquery.matchHeight-min.js"></script>
+
 		<!-- multiple image uploader -->
-		<script type="text/javascript" src="/js/image-uploader.js"></script>
-		<script>
-			$(document).ready(function () {
-				$(".input-images").imageUploader();
-			});
-		</script>
 		<script src="./js/script/script.js"></script>
 	</body>
 </html>
